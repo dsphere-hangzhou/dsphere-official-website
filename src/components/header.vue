@@ -6,13 +6,13 @@
         数影星球
       </div>
       <div class="home-title__box-menu">
-        <div class="home-title__box-menu__item" :class="{'home-action': $route.path=== '/'}">
+        <div class="home-title__box-menu__item" :class="{'home-action': $route.path !== '/'}">
           <router-link to="/">产品</router-link>
         </div>
-        <div class="home-title__box-menu__item" :class="{'home-action': $route.path=== '/pay'}">
+        <div class="home-title__box-menu__item" :class="{'home-action': $route.path !== '/pay'}">
           <router-link to="pay">咨询购买</router-link>
         </div>
-        <div class="home-title__box-menu__item" :class="{'home-action': $route.path=== '/about'}">
+        <div class="home-title__box-menu__item" :class="{'home-action': $route.path !== '/about'}">
           <router-link to="about">关于我们</router-link>
         </div>
       </div>
