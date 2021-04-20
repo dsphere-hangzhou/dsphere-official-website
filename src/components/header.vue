@@ -23,10 +23,10 @@
       <div class="home-title__call">
         <a-popover placement="bottom">
           <template slot="content">
-            <p>Content</p>
-            <p>Content</p>
+            <p><a-icon type="phone" />  电话电话电话</p>
+            <p><a-icon type="mail" />  邮箱邮箱邮箱</p>
           </template>
-          <span>
+          <span class="">
             联系我们<a-icon type="down" />
           </span>
         </a-popover>
@@ -109,6 +109,14 @@ export default {
 }
 .home-title__call {
   margin: 0 60px;
+  cursor: pointer;
+  &:hover i {
+    transform: rotate(180deg);
+  }
+  i {
+    margin-left: 5px;
+    font-size: 10px;
+  }
 }
 .home-title__seach .ant-input {
   width: 200px;
