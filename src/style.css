@@ -1,0 +1,36 @@
+body{ margin: 0;padding: 0;font-family: PingFang SC, Source Han Sans CN, Avenir, Helvetica, Arial, sans-serif;overflow: hidden; font-size: 14px; background: #F9FAFC;}
+body,html{-webkit-text-size-adjust: none;width: 100%;height: 100%;overflow: auto;}
+*{text-decoration: none;list-style: none;margin: 0;}
+img{border: 0px;}
+ul,li,dl,dd,dt,p,ol,h1,h2,h3,h4,h5{font-size: 12px;padding: 0;margin: 0;}
+.wrap{margin: 0 auto;}
+.fl{float: left;}
+.fr{float: right;}
+.index{overflow: hidden;}
+.clr{clear:both; height:0px; width:100%; font-size:1px; line-height:0px; visibility:hidden; overflow:hidden;}
+.pointer{cursor:pointer;}
+a,input,button{ outline:none; }
+a { color: #4A85F9; }
+::-moz-focus-inner{border:0px;}
+/*a:link {color:#0f0;text-decoration:none;} 
+a:visited {color: #FFFF00; text-decoration:none;} 
+a:hover {color: #00FF00; text-decoration:underline;} 
+a:active {color: #0000FF; text-decoration:underline;}*/
+.wrapper{clear: both;width: 100%;}
+word-break:break-all /*文字换行*/
+/*white-space:nowrap 文字不换行*/
+
+/* 这里放一些公用样式 */
+.breadcrumb-box {
+  background: #f0f2f7;
+  padding: 17px 25px;
+  text-align: left;
+}
+.content-box {
+  margin: 24px;
+  padding: 20px 25px;
+  background: #fff;
+}
+.ant-layout {
+  background: #F9FAFC;
+}
