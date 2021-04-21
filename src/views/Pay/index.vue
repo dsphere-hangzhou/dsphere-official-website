@@ -320,6 +320,11 @@ export default {
     color: #F63840;
   }
 }
+.pay-introduce--box-form__input {
+  input {
+    height: 48px;
+  }
+}
 .pay-introduce--box-form__ps {
   height: 20px;
   text-align: right;
