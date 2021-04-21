@@ -23,8 +23,8 @@
       <div class="home-title__call">
         <a-popover placement="bottom">
           <template slot="content">
-            <p><a-icon type="phone" />  电话电话电话</p>
-            <p><a-icon type="mail" />  邮箱邮箱邮箱</p>
+            <p><a-icon type="phone" />  (0571) 88773523</p>
+            <p><a-icon type="mail" />  ds@dsphere.cn</p>
           </template>
           <span class="">
             联系我们<a-icon type="down" />
@@ -80,7 +80,7 @@ export default {
   z-index: 10;
 }
 .home-title-shadow {
-  box-shadow: 0 1px 5px #ddd;
+  box-shadow: 0 4px 8px #ddd;
 }
 .home-title__box {
   margin: 0 auto;

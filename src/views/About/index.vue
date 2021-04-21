@@ -37,13 +37,10 @@
         邮政编码：311100
         </p>
         <p>
-        电话：+86 106521 6500
+        电话：(0571) 88773523
         </p>
         <p>
-        传真：+86 106521 6500
-        </p>
-        <p>
-        电邮：<span>chinaifo@citrix.com</span>
+        电邮：<span>ds@dsphere.cn</span>
         </p>
       </div>
     </div>

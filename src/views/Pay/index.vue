@@ -113,21 +113,21 @@
       </div>
       <div class="pay-contact__box">
         <div class="pay-contact__box-item">
-          <img src="QQ.png"/>
+          <img src="QQ.png" class="pay-contact__box-item-img"/>
           <p>QQ</p>
-          <p >123456789<a-icon type="copy" class="pay-copy" @click="copy" /></p>
+          <p>3548249324<a-icon type="copy" class="pay-copy" @click="copy" /></p>
         </div>
          <div class="pay-contact__box-item">
           <div class="pay-contact__box-item-right">
-            <img src="gx.png"/>
+            <img src="gx.png" class="pay-contact__box-item-right-img"/>
             <img src="er.png" class="pay-contact__box-item-right__er"/>
           </div>
-          <img src="wx.png"/>
+          <img src="wx.png" class="pay-contact__box-item-img"/>
           <p>微信公众号</p>
         </div>
       </div>
     </div>
-    <textarea id="复制复制" style="display: none">123456789</textarea>
+    <textarea id="3548249324" ref="randomCodeRef" style="display: none">3548249324</textarea>
 
     <Footer />
   </div>
@@ -173,10 +173,19 @@ export default {
   },
   methods: {
     copy () {
-      var Url2=document.getElementById("复制复制");
-      Url2.select(); // 选择对象
-      document.execCommand("Copy"); // 执行浏览器复制命令
+      let random = this.$refs.randomCodeRef.innerHTML;
+      const input = document.createElement('input');
+      document.body.appendChild(input);
+      input.setAttribute('value',random);
+      input.setAttribute('create', 1);
+      input.select();
+      document.execCommand("Copy");
       this.$message.success('复制成功')
+      var list = document.getElementsByTagName('input')
+      var inputList = Array.prototype.slice.call(list)
+      inputList.forEach((item)=>{
+          if(item.getAttribute('create'))document.body.removeChild(item);
+      });
     },
     getAxios() {
       let isreturn = false
@@ -342,7 +351,7 @@ export default {
   padding: 82px;
   box-shadow: 0 0 10px #eee;
   text-align: center;
-  img {
+  .pay-contact__box-item-img {
     width: 82px;
   }
   p {
@@ -354,19 +363,30 @@ export default {
   position: absolute;
   top: 0;
   right: 0;
+  width: 100px;
+  height: 100px;
   &:hover .pay-contact__box-item-right__er{
     display: inline;
+    animation-name: example;
+    animation-duration: 1s;
   }
-  img {
+  &:hover .pay-contact__box-item-right-img {
+    display: none;
+  }
+  .pay-contact__box-item-right-img {
     width: 100px;
   }
 }
+@keyframes example {
+  0%   {transform: scale(0.8);}
+  100% {transform: scale(1);}
+}
 .pay-contact__box-item-right__er {
   position: absolute;
-  right: 0;
-  top: 0;
-  width: 300px;
-  display: none;;
+  right: 50px;
+  top: 50px;
+  width: 200px;
+  display: none;
 }
 .pay-copy {
   cursor: pointer;
