@@ -21,13 +21,13 @@
         <a-icon type="search" @click="showSearch = true" class="home-title__seach2" />
       </div>
       <div class="home-title__call">
-        <a-popover placement="bottom">
+        <a-popover placement="bottom" v-model="visible" trigger="click">
           <template slot="content">
             <p><a-icon type="phone" />  (0571) 88773523</p>
             <p><a-icon type="mail" />  ds@dsphere.cn</p>
           </template>
           <span class="">
-            联系我们<a-icon type="down" />
+            联系我们<a-icon type="down" :class="{'home-title__call-icon': visible}" />
           </span>
         </a-popover>
       </div>
@@ -44,6 +44,7 @@ export default {
     return {
       showSearch: false,
       isTop: true, // 是否置顶
+      visible: false
     }
   },
   methods: {
@@ -122,13 +123,13 @@ export default {
 .home-title__call {
   margin: 0 60px;
   cursor: pointer;
-  &:hover i {
-    transform: rotate(180deg);
-  }
   i {
     margin-left: 5px;
     font-size: 10px;
   }
+}
+.home-title__call-icon {
+  transform: rotate(180deg);
 }
 .home-title__seach .ant-input {
   width: 200px;

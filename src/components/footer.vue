@@ -38,10 +38,10 @@
             关注数影星球
           </div>
           <div class="footer-item--center">
-            <img src="wb.png" style="marginRight: 20px"/>
+            <!-- <img src="wb.png" style="marginRight: 20px"/> -->
             <a-popover placement="bottom">
               <template slot="content">
-                <p>二维码</p>
+                <p><img src="er.png" style="width: 100px"/></p>
               </template>
               <img src="wx.png"/>
             </a-popover>
