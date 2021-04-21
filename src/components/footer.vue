@@ -10,10 +10,6 @@
             <span @click="goAbout">
               了解数影星球
             </span>
-            <br />
-            新闻动态
-            <br />
-            联系我们
           </div>
         </div>
         <div class="footer-item">
@@ -28,8 +24,6 @@
             <span @click="goPay">
               项目咨询
             </span>
-            <br />
-            邮件
           </div>
         </div>
 
