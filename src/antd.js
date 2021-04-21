@@ -31,7 +31,8 @@ import {
   Radio,
   TreeSelect,
   Popover,
-  Alert
+  Alert,
+  Result
 } from 'ant-design-vue'
 
 Vue.prototype.$message = Message;
@@ -68,4 +69,5 @@ Vue.use(Radio)
 Vue.use(TreeSelect)
 Vue.use(Popover)
 Vue.use(Alert)
+Vue.use(Result)
 

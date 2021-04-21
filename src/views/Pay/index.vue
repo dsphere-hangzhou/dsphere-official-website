@@ -21,7 +21,7 @@
         <div class="pay-introduce--box-title">
           填写表单，我们将第一时间与您取得联系
         </div>
-        <div class="pay-introduce--box-form">
+        <div class="pay-introduce--box-form" v-if="!success">
           <div class="pay-introduce--box-form__title">
             姓名<span>*</span>
           </div>
@@ -104,6 +104,19 @@
             提交
           </a-button>
         </div>
+        <div v-if="success">
+          <a-result
+            status="success"
+            title="提交成功!"
+            sub-title="我们将第一时间与您取得联系。"
+          >
+            <template #extra>
+              <a-button key="console" type="primary" @click="success = false">
+                返回
+              </a-button>
+            </template>
+          </a-result>
+        </div>
       </div>
     </div>
 
@@ -169,6 +182,7 @@ export default {
       showCompany: false,
       showPosition: false,
       showBusiness: false,
+      success: false,
     }
   },
   methods: {
@@ -229,7 +243,7 @@ export default {
       axios.post('/api/v1/client/commit', this.form).then(res => {
         console.log(res.data)
         if (res.data.data) {
-          this.$message.success('提交成功')
+          this.success = true
           this.form = {
             name: "",
             phone: "",
