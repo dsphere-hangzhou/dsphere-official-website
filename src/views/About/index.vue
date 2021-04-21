@@ -23,8 +23,8 @@
     </div>
 
     <div class="about-box1">
-      <div class="about-box__img about-box__text-right">
-        <img src="gsjj.png"/>
+      <div class="about-box__img about-box__text-right" id="container">
+        <!-- <img src="gsjj.png"/> -->
       </div>
       <div class="about-box1__text">
         <div class="about-box__text-title">
@@ -56,6 +56,20 @@ export default {
   components: {
     Header,
     Footer
+  },
+  mounted() {
+    /*eslint-disable*/
+    var map = new AMap.Map('container', {
+       center:[120.023875,30.289076],
+       zoom:16
+    });
+    var marker = new AMap.Marker({
+      position: new AMap.LngLat(120.023875,30.289076),   // 经纬度对象，也可以是经纬度构成的一维数组[116.39, 39.9]
+      title: '数影星球'
+    });
+    map.add(marker)
+
+    /*eslint-disable*/
   }
 }
 </script>
