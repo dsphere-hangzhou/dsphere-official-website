@@ -67,7 +67,12 @@
             职务<span>*</span>
           </div>
           <div class="pay-introduce--box-form__input">
-            <a-input v-model="form.position" />
+            <a-select v-model="form.position" style="width: 100%">
+              <a-select-option v-for="item in selectList" :value="item" :key="item">
+                {{item}}
+              </a-select-option>
+            </a-select>
+            <!-- <a-input v-model="form.position" /> -->
           </div>
           <div class="pay-introduce--box-form__ps">
             <span v-if="showPosition">请选择职务</span>
@@ -140,6 +145,15 @@ export default {
   },
   data () {
     return {
+      selectList: [
+        '首席执行官/总经理',
+        '首席信息官/首席技术官',
+        '信息技术主管/经理',
+        '项目经理/市场总监',
+        '采购总监/经理',
+        '技术工程师',
+        '其他'
+      ],
       form: {
         name: "",
         phone: "",
@@ -203,7 +217,7 @@ export default {
         this.showBusiness = false
       }
       if (isreturn) return
-      axios.post('http://192.168.98.24:9008/api/v1/client/commit', this.form).then(res => {
+      axios.post('/api/v1/client/commit', this.form).then(res => {
         console.log(res.data)
         if (res.data.data) {
           this.$message.success('提交成功')

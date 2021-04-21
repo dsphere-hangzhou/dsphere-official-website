@@ -31,7 +31,7 @@
           </span>
         </a-popover>
       </div>
-      <a-button type="primary" class="home-title__button">
+      <a-button type="primary" class="home-title__button" @click="goConsole">
         登录控制台
       </a-button>
     </div>
@@ -54,6 +54,9 @@ export default {
       } else if (scrollTop === 0) {
         this.isTop = true
       }
+    },
+    goConsole() {
+      window.open('https://console.dsphere.com.cn/#/login')
     }
   },
   mounted() {
@@ -62,7 +65,7 @@ export default {
   },
   beforeDestroy() {
     window.removeEventListener('scroll', this.getScroll);
-  }
+  },
 }
 </script>
 

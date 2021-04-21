@@ -197,7 +197,7 @@
 
       <div class="cost-video">
         <img src="sqys.png" class="cost-video-img"/>
-        <img src="play.png" class="cost-video__play"/>
+        <img src="play.png" class="cost-video__play" @click="goPay"/>
       </div>
 
       <div class="home-titleps">
@@ -469,6 +469,7 @@ export default {
   top: 180px;
   left: 550px;
   width: 110px;
+  cursor: pointer;
 }
 .home-industry {
   width: 1200px;
