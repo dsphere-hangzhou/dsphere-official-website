@@ -16,9 +16,9 @@
           <router-link to="about">关于我们</router-link>
         </div>
       </div>
-      <div class="home-title__seach">
-        <a-input class="home-title__search" v-if="showSearch" />
-        <a-icon type="search" @click="showSearch = true" />
+      <div class="home-title__seach" ref="seatTipOperation">
+        <a-input class="home-title__seach1" v-if="showSearch" />
+        <a-icon type="search" @click="showSearch = true" class="home-title__seach2" />
       </div>
       <div class="home-title__call">
         <a-popover placement="bottom">
@@ -55,16 +55,25 @@ export default {
         this.isTop = true
       }
     },
+    getClick (e) {
+      // console.log(e.target.className)
+      // console.log(e.target.className.indexOf('home-title__seach'))
+      if (e.target.className.indexOf('home-title__seach') < 0) {
+        this.showSearch = false
+      }
+    },
     goConsole() {
       window.open('https://console.dsphere.com.cn/#/login')
     }
   },
   mounted() {
-    console.log(this.$route.path)
+    // console.log(this.$route.path)
     window.addEventListener('scroll', this.getScroll, true);
+    document.addEventListener('click', this.getClick)
   },
   beforeDestroy() {
     window.removeEventListener('scroll', this.getScroll);
+    window.removeEventListener('click', this.getClick);
   },
 }
 </script>
