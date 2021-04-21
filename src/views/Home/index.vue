@@ -26,7 +26,7 @@
                 数影空间介绍
               </div>
               <div class="home-introduce-carousel__item-left__ps">
-                数影空间是一个安全、高效、智能的数字化工作空间，以全新概念“工作空间即服务”重新定义办公。脱离了传统工作模式的限制，不论你身在何处，使用何种设备，都可以轻松接入云端办公桌面，所需应用和数据全部即点即用，实现比本地更加高效流畅的工作体验。更为精彩的是，数影空间提供丰富的安全解决方案为企业数据保驾护航。云端接入的方式将数据隔离在安全围栏内部，终端侧不落地，有效避免数据泄露。面向未来的企业标准办公形态就在眼前，抢先一步，<router-link to="pay">即刻体验 ></router-link>
+                数影空间是一个安全、高效、智能的数字化工作空间，以全新概念“工作空间即服务”重新定义办公。脱离了传统工作模式的限制，不论你身在何处，使用何种设备，都可以轻松接入云端办公桌面，所需应用和数据全部即点即用，实现比本地更加高效流畅的工作体验。更为精彩的是，数影空间提供丰富的安全解决方案为企业数据保驾护航。云端接入的方式将数据隔离在安全围栏内部，终端侧不落地，有效避免数据泄露。面向未来的企业标准办公形态就在眼前，抢先一步，<router-link to="contact_us">即刻体验 ></router-link>
               </div>
             </div>
             <div class="home-introduce-carousel__item-right"></div>
@@ -45,7 +45,7 @@
           数据不落地，根本上解决企业的数据安全问题
         </div>
         <div class="home-titleps__goNext">
-          <router-link to="pay">了解更多 ></router-link>
+          <router-link to="contact_us">了解更多 ></router-link>
         </div>
       </div>
 
@@ -101,14 +101,14 @@
 
       <div class="home-titleps">
         <div class="home-titleps__top">
-          安全护航
+          高效运营
         </div>
         <div class="home-titleps__gang"></div>
         <div class="home-titleps__center">
-          数据不落地，根本上解决企业的数据安全问题
+          解除传统模式限制，灵活统一即点即用
         </div>
         <div class="home-titleps__goNext">
-          <router-link to="pay">了解更多 ></router-link>
+          <router-link to="contact_us">了解更多 ></router-link>
         </div>
       </div>
 
@@ -153,7 +153,7 @@
           资源智能按需分配，减少运营投入，专注生产力发展
         </div>
         <div class="home-titleps__goNext">
-          <router-link to="pay">了解更多 ></router-link>
+          <router-link to="contact_us">了解更多 ></router-link>
         </div>
       </div>
 
@@ -253,7 +253,7 @@ export default {
   },
   methods: {
     goPay () {
-      this.$router.push('/pay')
+      this.$router.push('/contact_us')
     }
   }
 }

@@ -51,7 +51,7 @@
 export default {
   methods: {
     goPay() {
-      this.$router.push('/pay')
+      this.$router.push('/contact_us')
     },
     goAbout() {
       this.$router.push('/about')

@@ -19,8 +19,8 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/About/index.vue')
   },
   {
-    path: '/pay',
-    name: 'Pay',
+    path: '/contact_us',
+    name: 'Contact_us',
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
@@ -29,11 +29,13 @@ const routes = [
 ]
 
 const router = new VueRouter({
-  routes,
-  scrollBehavior () {
-    return { x: 0, y: 0 }
-  }
+  routes
 })
+
+router.beforeEach((to, from, next) => {
+  document.body.scrollTop = 0;
+  next()
+});
 
 
 export default router

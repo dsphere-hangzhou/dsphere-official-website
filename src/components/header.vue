@@ -9,8 +9,8 @@
         <div class="home-title__box-menu__item" :class="{'home-action': $route.path !== '/'}">
           <router-link to="/">产品</router-link>
         </div>
-        <div class="home-title__box-menu__item" :class="{'home-action': $route.path !== '/pay'}">
-          <router-link to="pay">咨询购买</router-link>
+        <div class="home-title__box-menu__item" :class="{'home-action': $route.path !== '/contact_us'}">
+          <router-link to="contact_us">咨询购买</router-link>
         </div>
         <div class="home-title__box-menu__item" :class="{'home-action': $route.path !== '/about'}">
           <router-link to="about">关于我们</router-link>
