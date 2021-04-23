@@ -18,7 +18,7 @@
         <img src="dot.png"/>
       </div>
       <div class="pay-introduce--box">
-        <div class="pay-introduce--box-title">
+        <div class="pay-introduce--box-title" v-if="!success">
           填写表单，我们将第一时间与您取得联系
         </div>
         <div class="pay-introduce--box-form" v-if="!success">
@@ -273,12 +273,12 @@ export default {
 }
 .pay-banner__box {
   position: absolute;
-  top: 140px;
+  top: 10vw;
   left: 50%;
   width: 1200px;
   transform: translate( -50%, 0);
   p {
-    margin-bottom: 15px;
+    margin-bottom: 12px;
     font-size: 26px;
     color: #666666;
     line-height: 20px;

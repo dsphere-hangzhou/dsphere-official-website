@@ -32,7 +32,7 @@
         </a-popover>
       </div>
       <a-button type="primary" class="home-title__button" @click="goConsole">
-        登录控制台
+        进入空间
       </a-button>
     </div>
   </div>
@@ -64,7 +64,7 @@ export default {
       }
     },
     goConsole() {
-      window.open('https://console.dsphere.com.cn/#/login')
+      window.open('https://work.dsphere.com.cn/#/login')
     }
   },
   mounted() {

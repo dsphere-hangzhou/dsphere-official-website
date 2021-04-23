@@ -43,7 +43,7 @@
         </div>
 
       </div>
-      <div class="footer-bottom">@2021 数影星球（杭州）科技有限公司 版权所有 备案号：浙ICP备2020043431号</div>
+      <div class="footer-bottom">@2021 数影星球（杭州）科技有限公司 版权所有 备案号：浙ICP备2020043431号-1</div>
     </div>
 </template>
 
