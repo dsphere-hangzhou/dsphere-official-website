@@ -393,11 +393,10 @@ export default {
   background: #EBF2FF;
 }
 .operate-box {
-  margin: 0 auto;
-  width: 1200px;
+  width: 100%;
   height: 600px;
-  background: #FFFFFF;
-  box-shadow: 0px 4px 20px 2px rgba(114, 114, 114, 0.08);
+  background: #EBF2FF;
+  // box-shadow: 0px 4px 20px 2px rgba(114, 114, 114, 0.08);
   overflow: scroll;
   /*隐藏滚动条，当IE下溢出，仍然可以滚动*/
   -ms-overflow-style:none;
@@ -410,7 +409,10 @@ export default {
 .operate-box--item {
   position: sticky;
   top: 0;
+  width: 1200px;
+  margin: 0 auto;
   text-align: center;
+  background: #EBF2FF;
   img {
     width: 100%;
   }
