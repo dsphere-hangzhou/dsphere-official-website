@@ -17,7 +17,7 @@
 
     <div class="home-introduce">
       <div class="home-introduce-top">
-        <img src="dot.png"/>
+        <img src="diandian.png"/>
       </div>
       <div class="home-introduce-carousel">
         <div class="home-introduce-carousel__item">
@@ -26,10 +26,12 @@
                 数影空间介绍
               </div>
               <div class="home-introduce-carousel__item-left__ps">
-                数影空间是一个安全、高效、智能的数字化工作空间，以“工作空间即服务”的全新理念重新定义在线办公。不论您身在何处、使用何种设备，都可以轻松接入数影空间，办公应用和文档数据即点即用，实现高效流畅的线上工作体验。更为精彩的是，数影运行在远离组织网络和设备的云端安全空间内，并且具备极其完善的安全特性。除了能有效抵御来自外部网络的安全威胁，还能确保组织各类业务系统和数据被妥善的保护在安全围栏内，防止数据资产泄露，为组织的信息安全保驾护航。面向未来的下一代办公形态就在眼前，抢先一步，<router-link to="contact_us">即刻体验 ></router-link>
+                数影空间是一个安全、高效、智能的数字化工作空间，以“工作空间即服务”的全新理念重新定义在线办公。不论您身在何处、使用何种设备，都可以轻松接入数影空间，办公应用和文档数据即点即用，实现高效流畅的线上工作体验。面向未来的下一代办公形态就在眼前，抢先一步，<router-link to="contact_us">即刻体验 ></router-link>
               </div>
             </div>
-            <div class="home-introduce-carousel__item-right"></div>
+            <div class="home-introduce-carousel__item-right">
+              <img src="kjjs.png"/>
+            </div>
           </div>
       </div>
     </div>
@@ -52,7 +54,17 @@
       <div class="security-box">
         <img src="bigdot.png" class="security-box--left" />
         <img src="diandian.png" class="security-box--right" />
-        <a-carousel autoplay dotsClass="security-box-dot">
+        <a-carousel autoplay arrows dotsClass="security-box-dot">
+          <div
+            slot="prevArrow"
+            class="custom-slick-arrow"
+            style="left: 10px;zIndex: 1"
+          >
+            <a-icon type="left-circle" />
+          </div>
+          <div slot="nextArrow" class="custom-slick-arrow" style="right: 20px">
+            <a-icon type="right-circle" />
+          </div>
           <div class="home-introduce-carousel__item">
             <div class="home-introduce-carousel__item-right">
               <img src="data.png" />
@@ -114,6 +126,19 @@
 
       <div class="operate-box">
 
+        <a-carousel autoplay arrows dotsClass="security-box-dot">
+          <div
+            slot="prevArrow"
+            class="custom-slick-arrow"
+            style="left: 10px;zIndex: 1"
+          >
+            <a-icon type="left-circle" />
+          </div>
+          <div slot="nextArrow" class="custom-slick-arrow" style="right: 20px">
+            <a-icon type="right-circle" />
+          </div>
+
+          
         <div class="operate-box--item">
           <div class="operate-box--item-title">
             不再受限于办公场地，任何终端、任何地点，
@@ -138,6 +163,7 @@
           </div>
           <img src="computer.png"/>
         </div>
+        </a-carousel>
 
       </div>
 
@@ -227,16 +253,16 @@ export default {
   data () {
     return {
       industryList: [ {
-        icon: 'jy.png',
+        icon: 'yys.png',
         name: '电商'
       },{
-        icon: 'zf.png',
+        icon: 'hlw.png',
         name: '互联网'
       }, {
         icon: 'jr.png',
         name: '金融'
       }, {
-        icon: 'yys.png',
+        icon: 'zzy.png',
         name: '制造业'
       }, {
         icon: 'qy.png',
@@ -304,6 +330,10 @@ export default {
   margin-left: 60px;
   img {
     width: 86px;
+    position: relative;
+    left: -100px;
+    bottom: -40px;
+    z-index: -1;
   }
 }
 .home-introduce-carousel {
@@ -316,6 +346,7 @@ export default {
 }
 .home-introduce-carousel__item-left {
   flex: 1;
+  background: #fff;
 }
 .home-introduce-carousel__item-right {
   width: 540px;
@@ -334,6 +365,7 @@ export default {
 .home-introduce-carousel__item-left__ps {
   margin: 0 61px;
   text-align: justify;
+  font-size: 18px;
   span {
     color: #4A85F9;
   }
@@ -379,7 +411,7 @@ export default {
 .security-box--left {
   position: absolute;
   top: -126px;
-  left: -68px;
+  left: -292px;
   width: 292px;
 }
 .security-box--right {
@@ -387,6 +419,7 @@ export default {
   top: -30px;
   right: -30px;
   width: 68px;
+  z-index: -1;
 }
 .operate {
   padding: 60px 0 ;
@@ -494,5 +527,23 @@ export default {
 }
 .ant-carousel .security-box-dot li button {
   background: #666 !important;
+}
+.ant-carousel .custom-slick-arrow {
+  width: 25px;
+  height: 25px;
+  font-size: 30px !important;
+  color: rgba(0,0,0,0.3) !important;
+}
+.ant-carousel .slick-prev {
+  color: rgba(255,255,255,0.3) !important;
+}
+.ant-carousel .custom-slick-arrow:before {
+  display: none;
+}
+.ant-carousel .custom-slick-arrow:hover {
+  opacity: 0.5;
+}
+.ant-carousel .slick-prev, .ant-carousel .slick-next {
+  font-size: 30px;
 }
 </style>

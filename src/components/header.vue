@@ -31,9 +31,9 @@
           </span>
         </a-popover>
       </div>
-      <a-button type="primary" class="home-title__button" @click="goConsole">
+      <!-- <a-button type="primary" class="home-title__button" @click="goConsole">
         进入空间
-      </a-button>
+      </a-button> -->
     </div>
   </div>
 </template>
