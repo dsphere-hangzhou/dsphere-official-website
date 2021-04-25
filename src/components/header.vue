@@ -23,8 +23,10 @@
       <div class="home-title__call">
         <a-popover placement="bottom" v-model="visible" trigger="click">
           <template slot="content">
-            <p><a-icon type="phone" />  (0571) 88773523</p>
-            <p><a-icon type="mail" />  ds@dsphere.cn</p>
+            <div class="home-title__call-box">
+              <p><a-icon type="phone" />  (0571) 88773523</p>
+              <p><a-icon type="mail" />  ds@dsphere.cn</p>
+            </div>
           </template>
           <span class="">
             联系我们<a-icon type="down" :class="{'home-title__call-icon': visible}" />
@@ -126,6 +128,18 @@ export default {
   i {
     margin-left: 5px;
     font-size: 10px;
+  }
+}
+.home-title__call-box {
+  margin: 5px;
+  p {
+    margin-bottom: 0;
+    line-height: 30px;
+    font-size: 16px;
+    color: #666;
+  }
+  p:first-child {
+    margin-bottom: 20px;
   }
 }
 .home-title__call-icon {
