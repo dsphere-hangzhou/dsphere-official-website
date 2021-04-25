@@ -426,18 +426,19 @@ export default {
   background: #EBF2FF;
 }
 .operate-box {
-  width: 100%;
+  margin: 0 auto;
+  width: 1200px;
   height: 600px;
   background: #EBF2FF;
   // box-shadow: 0px 4px 20px 2px rgba(114, 114, 114, 0.08);
-  overflow: scroll;
-  /*隐藏滚动条，当IE下溢出，仍然可以滚动*/
-  -ms-overflow-style:none;
-  /*火狐下隐藏滚动条*/
-  overflow:-moz-scrollbars-none;
-  &::-webkit-scrollbar{
-    display:none;
-  }
+  overflow: hidden;
+  // /*隐藏滚动条，当IE下溢出，仍然可以滚动*/
+  // -ms-overflow-style:none;
+  // /*火狐下隐藏滚动条*/
+  // overflow:-moz-scrollbars-none;
+  // &::-webkit-scrollbar{
+  //   display:none;
+  // }
 }
 .operate-box--item {
   position: sticky;
