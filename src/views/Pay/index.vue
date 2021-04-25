@@ -67,7 +67,7 @@
             职务<span>*</span>
           </div>
           <div class="pay-introduce--box-form__input">
-            <a-select v-model="form.position" style="width: 100%">
+            <a-select v-model="form.position" style="width: 100%" size="large">
               <a-select-option v-for="item in selectList" :value="item" :key="item">
                 {{item}}
               </a-select-option>
@@ -336,6 +336,9 @@ export default {
 }
 .pay-introduce--box-form__input {
   input {
+    height: 48px;
+  }
+  .ant-select-lg .ant-select-selection--single {
     height: 48px;
   }
 }
