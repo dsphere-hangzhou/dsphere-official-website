@@ -9,7 +9,7 @@
         <div class="home-banner__box-title">
           企业安全办公的一站式终极解决方案
         </div>
-        <p>通过数影空间，实现<span>安全、高效、智能</span>的工作体验。</p>
+        <p>通过数影空间，实现<span>安全、高效、智能</span>的线上工作体验。</p>
         <div class="home-banner__box--buttton" @click="goPay">立即体验</div>
       </div>
     </div>
