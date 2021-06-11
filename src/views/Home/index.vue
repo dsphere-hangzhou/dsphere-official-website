@@ -33,11 +33,7 @@
                 云客服解决方案
               </div>
               <div class="home-banner__box-p">
-                生态用工
-                <div class="home-banner__box-p__span"></div>
-                沉浸式管理
-                <div class="home-banner__box-p__span"></div>
-                资源统筹
+                助力电商企业高效推进客服用工云化
               </div>
               <div class="home-banner__box--buttton" @click="goPay">了解详情</div>
           </div>
@@ -48,11 +44,7 @@
                 安全办公解决方案
               </div>
               <div class="home-banner__box-p">
-                生态用工
-                <div class="home-banner__box-p__span"></div>
-                沉浸式管理
-                <div class="home-banner__box-p__span"></div>
-                资源统筹
+                企业安全办公的一站式终极解决方案
               </div>
               <div class="home-banner__box--buttton" @click="goSecurity">了解详情</div>
           </div>
@@ -100,7 +92,7 @@
           </div>
         </div>
 
-        <div class="home-product__center-item">
+        <div class="home-product__center-item" @click="goPay">
           <img src="product2.png" class="home-product__center-item__img"/>
           <div class="home-product__center-item__title">
             云客服
