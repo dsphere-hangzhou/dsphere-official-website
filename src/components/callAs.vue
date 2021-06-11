@@ -1,6 +1,6 @@
 <template>
   <div class="callAs">
-    <div class="callAs-logo">
+    <div class="callAs-logo" @click="$router.push('/')">
       <img src="logo3.png"/>
     </div>
     <div class="callAs-center">

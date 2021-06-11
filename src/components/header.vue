@@ -1,7 +1,7 @@
 <template>
   <div class="home-title" :class="{'home-title-shadow': !isTop}">
     <div class="home-title__box">
-      <div class="home-title__box-logo">
+      <div class="home-title__box-logo" @click="$router.push('/')">
         <img src="logo2.png" >
         <!-- 数影星球 -->
       </div>
