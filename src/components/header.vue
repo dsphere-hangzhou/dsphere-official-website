@@ -7,8 +7,28 @@
       </div>
       <div class="home-title__box-menu">
         <div class="home-title__box-menu__item" :class="{'home-action': $route.path !== '/'}">
-          <router-link to="/">产品</router-link>
+          <router-link to="/">首页</router-link>
         </div>
+        <a-dropdown>
+          <div class="home-title__box-menu__item home-title__box-action" :class="{'home-action': $route.path !== '/contact_us'}">
+              解决方案
+          </div>
+          <a-menu slot="overlay">
+            <a-menu-item>
+              <router-link to="security" class="">
+                安全办公
+              </router-link>
+            </a-menu-item>
+            <a-menu-item>
+              <a href="javascript:;">云客服</a>
+            </a-menu-item>
+            <a-menu-item>
+              <router-link to="commerce" class="">
+                跨境电商
+              </router-link>
+            </a-menu-item>
+          </a-menu>
+        </a-dropdown>
         <div class="home-title__box-menu__item" :class="{'home-action': $route.path !== '/contact_us'}">
           <router-link to="contact_us">咨询购买</router-link>
         </div>
@@ -17,8 +37,6 @@
         </div>
       </div>
       <div class="home-title__seach" ref="seatTipOperation">
-        <a-input class="home-title__seach1" v-if="showSearch" />
-        <a-icon type="search" @click="showSearch = true" class="home-title__seach2" />
       </div>
       <div class="home-title__call">
         <a-popover placement="bottom" v-model="visible" trigger="click">
@@ -44,39 +62,14 @@
 export default {
   data () {
     return {
-      showSearch: false,
       isTop: true, // 是否置顶
       visible: false
     }
   },
   methods: {
-    getScroll () {
-      let scrollTop = document.body.scrollTop // 滚动条偏移量
-      if (scrollTop > 0 && this.isTop) {
-        this.isTop = false
-      } else if (scrollTop === 0) {
-        this.isTop = true
-      }
-    },
-    getClick (e) {
-      // console.log(e.target.className)
-      // console.log(e.target.className.indexOf('home-title__seach'))
-      if (e.target.className.indexOf('home-title__seach') < 0) {
-        this.showSearch = false
-      }
-    },
     goConsole() {
       window.open('https://work.dsphere.com.cn/#/login')
     }
-  },
-  mounted() {
-    // console.log(this.$route.path)
-    window.addEventListener('scroll', this.getScroll, true);
-    document.addEventListener('click', this.getClick)
-  },
-  beforeDestroy() {
-    window.removeEventListener('scroll', this.getScroll);
-    window.removeEventListener('click', this.getClick);
   },
 }
 </script>
@@ -110,13 +103,29 @@ export default {
   }
 }
 .home-title__box-menu {
+  height: 70px;
   display: flex;
+  align-items: center;
   font-size: 16px;
 }
 .home-title__box-menu__item {
   width: 90px;
   text-align: center;
   color: #666666;
+  font-weight: 500;
+  font-size: 16px;
+}
+.home-title__box-action {
+  height: 70px;
+  line-height: 70px;
+  cursor: pointer;
+}
+.home-title__box-action:hover {
+  background: #0756F0;
+  color: #fff;
+  a {
+    color: #fff !important;
+  }
 }
 .home-title__seach {
   flex: 1;
