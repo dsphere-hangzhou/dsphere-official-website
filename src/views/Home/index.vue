@@ -5,28 +5,29 @@
 
     <div class="home-banner">
       <a-carousel arrows effect="fade"  dotsClass="security-box-dot">
+        <a slot="customPaging" slot-scope="props">
+          <div 
+            class="home-banner__box--bot__item" 
+            :class="{'home-banner__box--bot__item-action': active === props.i}"
+            @click="active = props.i" 
+            ></div>
+        </a>
         <div class="home-banner__backbox">
-          <!-- <img src="homebanner.png" class="home-banner__background"/> -->
           <div class="home-banner__box">
               <div class="home-banner__box-title">
                 跨境电商解决方案
               </div>
               <div class="home-banner__box-p">
-                最简单的店铺管理
+                更高效的店铺管理
                 <div class="home-banner__box-p__span"></div>
-                最有效的风险规避
+                更安全的店铺环境
                 <div class="home-banner__box-p__span"></div>
-                最智能的运营体验
+                更智能的运营体验
               </div>
               <div class="home-banner__box--buttton" @click="goPay">了解详情</div>
-              <div class="home-banner__box--bot">
-                <div class="home-banner__box--bot__item home-banner__box--bot__item-action"></div>
-                <div class="home-banner__box--bot__item" @click="goTo()"></div>
-                <div class="home-banner__box--bot__item"></div>
-              </div>
           </div>
         </div>
-        <div class="home-banner__backbox">
+        <div class="home-banner__backbox1">
           <div class="home-banner__box">
               <div class="home-banner__box-title">
                 云客服解决方案
@@ -41,10 +42,10 @@
               <div class="home-banner__box--buttton" @click="goPay">了解详情</div>
           </div>
         </div>
-        <div class="home-banner__backbox">
+        <div class="home-banner__backbox2">
           <div class="home-banner__box">
               <div class="home-banner__box-title">
-                企业安全办公的一站式终极解决方案
+                安全办公解决方案
               </div>
               <div class="home-banner__box-p">
                 生态用工
@@ -188,6 +189,7 @@ import Footer from '@/components/footer.vue'
 export default {
   data () {
     return {
+      active: 0,
       industryList: [ {
         icon: 'homeds.png',
         name: '电商'
@@ -239,9 +241,20 @@ export default {
 }
 .home-banner__backbox {
   position: relative;
-  width: 100vw;
-  height: 40vw;
+  padding: 0 0 160px;
   background: url('/homebanner.png') no-repeat top left;
+  background-size: 100% 100%;
+}
+.home-banner__backbox1 {
+  position: relative;
+  padding: 0 0 160px;
+  background: url('/homebanner2.png') no-repeat top left;
+  background-size: 100% 100%;
+}
+.home-banner__backbox2 {
+  position: relative;
+  padding: 0 0 160px;
+  background: url('/homebanner3.png') no-repeat top left;
   background-size: 100% 100%;
 }
 .home-banner__box {
@@ -269,7 +282,9 @@ export default {
   line-height: 40px;
 }
 .home-banner__box-p__span {
+  margin: 0 10px;
   border-right: 1px solid #fff;
+  transform: scale(0.7);
 }
 .home-banner__box--buttton {
   width: 180px;
@@ -287,6 +302,9 @@ export default {
   margin: 4vw 0 0;
 }
 .home-banner__box--bot__item {
+  position: relative;
+  left: -560px;
+  top: -40px;
   margin-right: 5px;
   display: inline-block;
   border: 1px solid #fff;
@@ -526,9 +544,6 @@ export default {
   font-family: PingFang SC;
   color: #0756F0;
   font-weight: 500;
-}
-.security-box-dot {
-  // background: #111;
 }
 .ant-carousel .slick-dots-bottom {
   bottom: 6vw !important;
