@@ -10,7 +10,7 @@ ul,li,dl,dd,dt,p,ol,h1,h2,h3,h4,h5{font-size: 12px;padding: 0;margin: 0;}
 .clr{clear:both; height:0px; width:100%; font-size:1px; line-height:0px; visibility:hidden; overflow:hidden;}
 .pointer{cursor:pointer;}
 a,input,button{ outline:none; }
-a { color: #4A85F9; }
+a { color: #0756F0; }
 ::-moz-focus-inner{border:0px;}
 /*a:link {color:#0f0;text-decoration:none;} 
 a:visited {color: #FFFF00; text-decoration:none;} 

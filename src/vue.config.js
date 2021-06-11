@@ -1,5 +1,17 @@
 module.exports = {
   publicPath: './',
+  css: {
+    loaderOptions: {
+      less: {
+        lessOptions: {
+          modifyVars: {
+            'primary-color': '#0756F0',
+          },
+          javascriptEnabled: true,
+        },
+      },
+    },
+  },
   devServer: {
     proxy: {
       '/api': {

@@ -6,11 +6,11 @@
         <!-- 数影星球 -->
       </div>
       <div class="home-title__box-menu">
-        <div class="home-title__box-menu__item" :class="{'home-action': $route.path !== '/'}">
+        <div class="home-title__box-menu__item home-title__box-action" :class="{'home-action': $route.path !== '/'}">
           <router-link to="/">首页</router-link>
         </div>
         <a-dropdown>
-          <div class="home-title__box-menu__item home-title__box-action" :class="{'home-action': $route.path !== '/contact_us'}">
+          <div class="home-title__box-menu__item home-title__box-action" :class="{'home-action': $route.path !== '/aaa'}">
               解决方案
           </div>
           <a-menu slot="overlay">
@@ -29,16 +29,19 @@
             </a-menu-item>
           </a-menu>
         </a-dropdown>
-        <div class="home-title__box-menu__item" :class="{'home-action': $route.path !== '/contact_us'}">
+        <div class="home-title__box-menu__item home-title__box-action" :class="{'home-action': $route.path !== '/contact_us'}">
           <router-link to="contact_us">咨询购买</router-link>
         </div>
-        <div class="home-title__box-menu__item" :class="{'home-action': $route.path !== '/about'}">
+        <div class="home-title__box-menu__item home-title__box-action" :class="{'home-action': $route.path !== '/about'}">
           <router-link to="about">关于我们</router-link>
         </div>
       </div>
       <div class="home-title__seach" ref="seatTipOperation">
+        <a-button @click="dowm">
+          产品下载
+        </a-button>
       </div>
-      <div class="home-title__call">
+      <!-- <div class="home-title__call">
         <a-popover placement="bottom" v-model="visible" trigger="click">
           <template slot="content">
             <div class="home-title__call-box">
@@ -50,10 +53,10 @@
             联系我们<a-icon type="down" :class="{'home-title__call-icon': visible}" />
           </span>
         </a-popover>
+      </div> -->
+      <div class="home-title__button" @click="goConsole">
+        企业登陆
       </div>
-      <!-- <a-button type="primary" class="home-title__button" @click="goConsole">
-        进入空间
-      </a-button> -->
     </div>
   </div>
 </template>
@@ -69,6 +72,9 @@ export default {
   methods: {
     goConsole() {
       window.open('https://work.dsphere.com.cn/#/login')
+    },
+    dowm () {
+      window.open('https://dsphere-agent.oss-cn-hangzhou.aliyuncs.com/CBEC/DSphereSetup.exe')
     }
   },
 }
@@ -95,7 +101,7 @@ export default {
   align-items: center;
 }
 .home-title__box-logo {
-  width: 181px;
+  width: 200px;
   font-size: 20px;
   font-weight: 500;
   img {
@@ -109,11 +115,23 @@ export default {
   font-size: 16px;
 }
 .home-title__box-menu__item {
+  position: relative;
   width: 90px;
   text-align: center;
   color: #666666;
   font-weight: 500;
   font-size: 16px;
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 20px;
+    height: 4px;
+    background: linear-gradient(270deg, #118FF9 0%, #0756F0 100%);
+    border-radius: 2px;
+  }
 }
 .home-title__box-action {
   height: 70px;
@@ -126,10 +144,25 @@ export default {
   a {
     color: #fff !important;
   }
+  &::after {
+    content: '';
+    background: #0756F0;
+  }
 }
 .home-title__seach {
   flex: 1;
   text-align: right;
+  button {
+    width: 108px;
+    height: 36px;
+    background: #FFFFFF;
+    border-radius: 8px;
+    border: 2px solid #0756F0;
+    font-size: 16px;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: 500;
+    color: #0756F0;
+  }
 }
 .home-title__call {
   margin: 0 60px;
@@ -165,5 +198,24 @@ export default {
       color: #666;
     }
   }
+  &::after {
+    content: '';
+    background: #fff;
+  }
+}
+.home-title__button {
+  width: 100px;
+  margin-left: 20px;
+  border-left: 1px solid #E8E8E8;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 0;
+  font-size: 16px;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: #011847;
+  line-height: 22px;
+  text-align: center;
+  cursor: pointer;
 }
 </style>
