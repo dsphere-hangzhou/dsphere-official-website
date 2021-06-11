@@ -284,8 +284,8 @@ export default {
 }
 .home-banner__box-p__span {
   margin: 0 10px;
-  border-right: 1px solid #fff;
-  transform: scale(0.7);
+  border-right: 3px solid #fff;
+  transform: scale(0.5);
 }
 .home-banner__box--buttton {
   width: 180px;
