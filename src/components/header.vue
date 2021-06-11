@@ -89,6 +89,7 @@ export default {
   width: 100%;
   background: #fff;
   z-index: 10;
+  a { color: #0756F0; }
 }
 .home-title-shadow {
   box-shadow: 0 4px 8px #ddd;
