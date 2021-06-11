@@ -138,9 +138,9 @@
         <div class="home-product__title-gang"></div>
       </div>
 
-      <div class="cost-video">
-        <img src="homesqys.png" class="cost-video-img"/>
-        <img src="play2.png" class="cost-video__play" @click="goPay"/>
+      <div class="homecost-video">
+        <img src="homesqys.png" class="homecost-video-img"/>
+        <img src="play2.png" class="homecost-video__play" @click="goPay"/>
       </div>
 
       <div class="home-titleps">
@@ -514,7 +514,7 @@ export default {
   font-weight: 400;
   color: #666666
 }
-.cost-video {
+.homecost-video {
   width: 100%;
   margin: -60px auto 100px;
   padding: 90px 0;
@@ -522,11 +522,11 @@ export default {
   background: url('/homebanner1.png') no-repeat top left;
   background-size: auto 100%;
   text-align: center;
-  .cost-video-img {
+  .homecost-video-img {
     width: 70%;
   }
 }
-.cost-video__play {
+.homecost-video__play {
   position: absolute;
   top: 30vw;
   right: 25%;
