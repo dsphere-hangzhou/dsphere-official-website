@@ -516,9 +516,10 @@ export default {
     .commerce-advantage__security-item {
       display: flex;
       justify-content: space-between;
-      margin: 59px 0;
+      margin: 48px 0;
       img {
         width: 87px;
+        height: 87px;
       }
       .commerce-advantage__security-item__left {
         font-size: 48px;
@@ -528,6 +529,7 @@ export default {
         line-height: 48px;
         letter-spacing: 1px;
         p {
+          margin-top: 10px;
           font-size: 22px;
           font-weight: normal;
           color: #011847;
@@ -660,9 +662,10 @@ export default {
     margin: 116px auto 0;
     padding-bottom: 392px;
     display: flex;
+    justify-content: space-between;
     .commerce-bottom__aboutme-text {
       padding: 48px;
-      flex: 1;
+      width: 700px;
       background: #fff;
       font-size: 28px;
       color: #011847;
