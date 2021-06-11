@@ -659,12 +659,12 @@ export default {
   }
   .commerce-bottom__aboutme {
     width: 1200px;
-    margin: 116px auto 0;
+    margin: 0 auto 0;
     padding-bottom: 392px;
     display: flex;
     justify-content: space-between;
     .commerce-bottom__aboutme-text {
-      padding: 48px;
+      padding: 360px 48px 48px;
       width: 700px;
       background: #fff;
       font-size: 28px;
@@ -692,6 +692,7 @@ export default {
       }
     }
     .commerce-bottom__aboutme-img {
+      margin-top: 360px;
       width: 237px;
       img {
         width: 237px;

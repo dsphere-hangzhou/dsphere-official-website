@@ -160,7 +160,7 @@
         <!-- <a-button type="primary" class="home-bottom__button-left">
           立即注册
         </a-button> -->
-        <a-button class="home-bottom__button-right">
+        <a-button class="home-bottom__button-right" @click="dowm">
           立即下载
         </a-button>
       </div>
@@ -220,6 +220,9 @@ export default {
     goCommerce () {
       this.$router.push('/commerce')
     },
+    dowm () {
+      window.open('https://dsphere-agent.oss-cn-hangzhou.aliyuncs.com/CBEC/DSphereSetup.exe')
+    }
   }
 }
 </script>
@@ -409,6 +412,7 @@ export default {
     background: #0756F0;
     border-radius: 102px;
     font-size: 30px;
+    font-weight: 500;
     color: #fff;
     line-height: 102px;
     text-align: center;

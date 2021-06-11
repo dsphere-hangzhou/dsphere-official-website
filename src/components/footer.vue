@@ -141,6 +141,7 @@ export default {
   padding: 12px 0;
   color: #011847;
   display: flex;
+  justify-content: space-between;
   border-bottom: 1px solid #011847;
   .footer-item__top-item {
     color: #011847;
