@@ -1,14 +1,16 @@
 <template>
   <div id="app">
     <router-view/>
+    <callAs />
   </div>
 </template>
 
 <script>
-
+import callAs from '@/components/callAs'
 export default {
   name: 'App',
   components: {
+    callAs
   }
 }
 </script>
