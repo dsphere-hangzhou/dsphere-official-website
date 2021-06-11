@@ -6,9 +6,11 @@
         <!-- 数影星球 -->
       </div>
       <div class="home-title__box-menu">
-        <div class="home-title__box-menu__item home-title__box-action" :class="{'home-action': $route.path !== '/'}">
-          <router-link to="/">首页</router-link>
-        </div>
+        <router-link to="/">
+          <div class="home-title__box-menu__item home-title__box-action" :class="{'home-action': $route.path !== '/'}">
+            首页
+          </div>
+        </router-link>
         <a-dropdown>
           <div class="home-title__box-menu__item home-title__box-action" :class="{'home-action': $route.path !== '/aaa'}">
               解决方案
@@ -29,12 +31,16 @@
             </a-menu-item>
           </a-menu>
         </a-dropdown>
-        <div class="home-title__box-menu__item home-title__box-action" :class="{'home-action': $route.path !== '/contact_us'}">
-          <router-link to="contact_us">咨询购买</router-link>
-        </div>
-        <div class="home-title__box-menu__item home-title__box-action" :class="{'home-action': $route.path !== '/about'}">
-          <router-link to="about">关于我们</router-link>
-        </div>
+        <router-link to="contact_us">
+          <div class="home-title__box-menu__item home-title__box-action" :class="{'home-action': $route.path !== '/contact_us'}">
+            咨询购买
+          </div>
+        </router-link>
+        <router-link to="about">
+          <div class="home-title__box-menu__item home-title__box-action" :class="{'home-action': $route.path !== '/about'}">
+            关于我们
+          </div>
+        </router-link>
       </div>
       <div class="home-title__seach" ref="seatTipOperation">
         <a-button @click="dowm">
@@ -117,9 +123,9 @@ export default {
 }
 .home-title__box-menu__item {
   position: relative;
-  width: 90px;
+  padding: 0 12px;
   text-align: center;
-  color: #666666;
+  color: #0756F0;
   font-weight: 500;
   font-size: 16px;
   &::after {
@@ -193,6 +199,7 @@ export default {
   margin-right: 20px;
 }
 .home-action {
+  color: #666;
   a {
     color: #666;
     &:hover {
