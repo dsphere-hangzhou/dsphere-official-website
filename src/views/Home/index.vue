@@ -24,7 +24,7 @@
                 <div class="home-banner__box-p__span"></div>
                 更智能的运营体验
               </div>
-              <div class="home-banner__box--buttton" @click="goPay">了解详情</div>
+              <div class="home-banner__box--buttton" @click="goCommerce">了解详情</div>
           </div>
         </div>
         <div class="home-banner__backbox1">
@@ -54,7 +54,7 @@
                 <div class="home-banner__box-p__span"></div>
                 资源统筹
               </div>
-              <div class="home-banner__box--buttton" @click="goPay">了解详情</div>
+              <div class="home-banner__box--buttton" @click="goSecurity">了解详情</div>
           </div>
         </div>
       </a-carousel>
@@ -87,7 +87,7 @@
       <div class="home-product__title-gang"></div>
       <div class="home-product__center">
 
-        <div class="home-product__center-item">
+        <div class="home-product__center-item" @click="goCommerce">
           <img src="product.png" class="home-product__center-item__img"/>
           <div class="home-product__center-item__title">
             跨境电商
@@ -101,7 +101,7 @@
         </div>
 
         <div class="home-product__center-item">
-          <img src="product.png" class="home-product__center-item__img"/>
+          <img src="product2.png" class="home-product__center-item__img"/>
           <div class="home-product__center-item__title">
             云客服
           </div>
@@ -113,8 +113,8 @@
           </div>
         </div>
 
-        <div class="home-product__center-item">
-          <img src="product.png" class="home-product__center-item__img"/>
+        <div class="home-product__center-item" @click="goSecurity">
+          <img src="product3.png" class="home-product__center-item__img"/>
           <div class="home-product__center-item__title">
             安全办公
           </div>
@@ -175,7 +175,7 @@
     </div>
     <div class="home-bottom__next">
       跨境电商解决方案
-      <a-button>了解详情</a-button>
+      <a-button @click="goCommerce">了解详情</a-button>
     </div>
 
     <Footer />
@@ -218,7 +218,13 @@ export default {
   methods: {
     goPay () {
       this.$router.push('/contact_us')
-    }
+    },
+    goSecurity () {
+      this.$router.push('/security')
+    },
+    goCommerce () {
+      this.$router.push('/commerce')
+    },
   }
 }
 </script>
@@ -514,7 +520,7 @@ export default {
   padding: 90px 0;
   position: relative;
   background: url('/homebanner1.png') no-repeat top left;
-  background-size: 100% 100%;
+  background-size: auto 100%;
   text-align: center;
   .cost-video-img {
     width: 70%;
@@ -574,8 +580,8 @@ export default {
   width: 100%;
   margin: 0 auto;
   padding: 53px 0 80px;
-  background: url('/homebottom.png') no-repeat top left;
-  background-size: 100% 100%;
+  background: #fff url('/homebottom.png') no-repeat bottom left;
+  background-size: 100%;
 
   .home-bottom__button {
     margin: 0 auto;
