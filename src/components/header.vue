@@ -55,7 +55,7 @@
         </a-popover>
       </div> -->
       <div class="home-title__button" @click="goConsole">
-        企业登陆
+        企业登录
       </div>
     </div>
   </div>
