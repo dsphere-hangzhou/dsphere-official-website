@@ -93,7 +93,7 @@
             跨境电商
           </div>
           <div class="home-product__center-item__ps">
-            助力电商企业高效推进客服用工云化
+            更高效的店铺管理、更安全的店铺环境、更智能的运营体验
           </div>
           <div class="home-product__center-item__go">
             <img src="go.png"/>
@@ -465,7 +465,7 @@ export default {
     }
     .home-product__center-item__ps {
       margin-left: 69px;
-      width: 216px;
+      width: 256px;
       font-family: Alibaba-PuHuiTi-M, Alibaba-PuHuiTi;
       font-size: 18px;
       color: #fff;
