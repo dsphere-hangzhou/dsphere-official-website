@@ -470,6 +470,7 @@ export default {
     display: flex;
     justify-content: space-between;
     .commerce-advantage__01-item {
+      width: 368px;
       font-size: 48px;
       color: #011847;
       img {
