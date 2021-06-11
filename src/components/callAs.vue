@@ -58,7 +58,7 @@ export default {
     padding: 12px 18px;
   }
   .callAs-logo {
-    padding: 20px 0;
+    padding: 16px 0 18px;
     text-align: center;
     border-bottom: 2px solid #a6bcf5;
     img {
