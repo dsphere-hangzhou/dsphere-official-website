@@ -88,7 +88,7 @@
       <div class="home-product__center">
 
         <div class="home-product__center-item" @click="goCommerce">
-          <img src="product.png" class="home-product__center-item__img"/>
+          <img src="product3.png" class="home-product__center-item__img"/>
           <div class="home-product__center-item__title">
             跨境电商
           </div>
@@ -114,7 +114,7 @@
         </div>
 
         <div class="home-product__center-item" @click="goSecurity">
-          <img src="product3.png" class="home-product__center-item__img"/>
+          <img src="product.png" class="home-product__center-item__img"/>
           <div class="home-product__center-item__title">
             安全办公
           </div>
