@@ -7,7 +7,7 @@
         <div class="footer-item1">
 
           <div class="footer-item__top">
-            <div class="footer-item__top-item">
+            <div class="footer-item__top-item" @click="$router.push('/')">
               <img src="foothome.png"/>
               首页
             </div>
@@ -15,18 +15,18 @@
               <img src="footsolution.png"/>
               解决方案
             </div>
-            <div class="footer-item__top-item">
+            <div class="footer-item__top-item" @click="$router.push('/contact_us')">
               <img src="footask.png"/>
               咨询购买
             </div>
-            <div class="footer-item__top-item">
+            <div class="footer-item__top-item" @click="$router.push('/about')">
               <img src="footabout.png"/>
               关于我们
             </div>
-            <div class="footer-item__top-item">
+            <a class="footer-item__top-item" href='https://console.dsphere.com.cn/#/login'>
               <img src="footlogin.png"/>
               企业登录
-            </div>
+            </a>
           </div>
 
           <div class="footer-item__mil">
@@ -136,7 +136,9 @@ export default {
   display: flex;
   border-bottom: 1px solid #011847;
   .footer-item__top-item {
+    color: #011847;
     margin: 0 12px;
+    cursor: pointer;
   }
   img {
     width: 16px;

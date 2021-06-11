@@ -2,8 +2,8 @@
   <div class="home-title" :class="{'home-title-shadow': !isTop}">
     <div class="home-title__box">
       <div class="home-title__box-logo">
-        <img src="logo.png" >
-        数影星球
+        <img src="logo2.png" >
+        <!-- 数影星球 -->
       </div>
       <div class="home-title__box-menu">
         <div class="home-title__box-menu__item" :class="{'home-action': $route.path !== '/'}">
@@ -95,11 +95,11 @@ export default {
   align-items: center;
 }
 .home-title__box-logo {
-  width: 140px;
+  width: 181px;
   font-size: 20px;
   font-weight: 500;
   img {
-    width: 40px;
+    width: 181px;
   }
 }
 .home-title__box-menu {

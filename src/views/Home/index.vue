@@ -165,9 +165,9 @@
       </div>
       <div class="home-product__title-gang"></div>
       <div class="home-bottom__button">
-        <a-button type="primary" class="home-bottom__button-left">
+        <!-- <a-button type="primary" class="home-bottom__button-left">
           立即注册
-        </a-button>
+        </a-button> -->
         <a-button class="home-bottom__button-right">
           立即下载
         </a-button>
@@ -590,7 +590,7 @@ export default {
     margin: 0 auto;
     width: 540px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     button {
       width: 240px;
       height: 84px;
