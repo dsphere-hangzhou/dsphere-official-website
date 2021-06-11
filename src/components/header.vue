@@ -43,9 +43,9 @@
         </router-link>
       </div>
       <div class="home-title__seach" ref="seatTipOperation">
-        <a-button @click="dowm">
+        <!-- <a-button @click="dowm">
           产品下载
-        </a-button>
+        </a-button> -->
       </div>
       <!-- <div class="home-title__call">
         <a-popover placement="bottom" v-model="visible" trigger="click">

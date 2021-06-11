@@ -160,9 +160,9 @@
         <!-- <a-button type="primary" class="home-bottom__button-left">
           立即注册
         </a-button> -->
-        <a-button class="home-bottom__button-right" @click="dowm">
+        <!-- <a-button class="home-bottom__button-right" @click="dowm">
           立即下载
-        </a-button>
+        </a-button> -->
       </div>
     </div>
     <div class="home-bottom__next">
