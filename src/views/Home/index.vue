@@ -241,19 +241,19 @@ export default {
 }
 .home-banner__backbox {
   position: relative;
-  padding: 0 0 160px;
+  padding: 0 0 10vw;
   background: url('/homebanner.png') no-repeat top left;
   background-size: 100% 100%;
 }
 .home-banner__backbox1 {
   position: relative;
-  padding: 0 0 160px;
+  padding: 0 0 10vw;
   background: url('/homebanner2.png') no-repeat top left;
   background-size: 100% 100%;
 }
 .home-banner__backbox2 {
   position: relative;
-  padding: 0 0 160px;
+  padding: 0 0 10vw;
   background: url('/homebanner3.png') no-repeat top left;
   background-size: 100% 100%;
 }
