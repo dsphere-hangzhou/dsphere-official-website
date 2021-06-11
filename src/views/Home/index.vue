@@ -4,7 +4,7 @@
     <Header />
 
     <div class="home-banner">
-      <a-carousel arrows effect="fade"  dotsClass="security-box-dot">
+      <a-carousel autoplay arrows effect="fade" dotsClass="security-box-dot" :after-change="afterChange">
         <a slot="customPaging" slot-scope="props">
           <div 
             class="home-banner__box--bot__item" 
@@ -216,6 +216,9 @@ export default {
     Footer
   },
   methods: {
+    afterChange (current) {
+      this.active = current
+    },
     goPay () {
       this.$router.push('/contact_us')
     },
