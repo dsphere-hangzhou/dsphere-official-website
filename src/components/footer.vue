@@ -78,8 +78,10 @@
             </a-popover>
           </div>
         </div> -->
-        <div class="footer-item">
+        <div class="footer-item2">
           <img src="er.png" style="width: 100px"/>
+          <br />
+          微信咨询
         </div>
 
         
@@ -123,6 +125,11 @@ export default {
   display: inline-block;
   margin: 0 150px;
 }
+.footer-item2 {
+  display: inline-block;
+  text-align: center;
+  color: #8990a0;
+}
 .footer-item--title {
   font-size: 24px;
   font-family: PingFang SC;
@@ -154,7 +161,7 @@ export default {
 .footer-item__bottom {
   margin: 16px 0 24px;
   padding-left: 12px;
-  color: #011847;
+  color: #8990a0;
   font-size: 14px;
   span {
     padding-left: 16px;
