@@ -12,7 +12,8 @@
           </div>
         </router-link>
         <a-dropdown>
-          <div class="home-title__box-menu__item home-title__box-action" :class="{'home-action': $route.path !== '/aaa'}">
+          <div class="home-title__box-menu__item home-title__box-action" 
+            :class="{'home-action': $route.path !== '/commerce' && $route.path !== '/security' }">
               解决方案
           </div>
           <a-menu slot="overlay">
