@@ -54,7 +54,7 @@ export default {
     box-shadow: 0px 8px 14px 0px rgba(7, 86, 240, 0.08);
     border-radius: 15px 0 0 15px;
     background: #fff;
-    z-index: 10;
+    z-index: 1;
     padding: 12px 18px;
   }
   .callAs-logo {
