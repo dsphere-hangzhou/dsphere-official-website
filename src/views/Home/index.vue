@@ -348,18 +348,19 @@ export default {
 }
 .home-details {
   position: relative;
-  margin: -80px 8%;
+  margin: -80px auto;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   background: #fff;
   border-radius: 16px;
-  height: 180px;
+  height: 150px;
+  width: 1200px;
   z-index: 1;
   box-shadow: 0px 8px 14px 0px rgba(49, 114, 242, 0.1);
   font-size: 32px;
   color: #012F8A;
-  line-height: 102px;
+  line-height: 80px;
   .home-deitail__left {
     margin-left: 4%;
     line-height: 20px;
@@ -403,19 +404,19 @@ export default {
   }
   .home-details__center {
     display: flex;
-    height: 102px;
+    height: 80px;
     font-size: 24px;
   }
   .home-details__center-dot {
     margin: 0 16px;
-    width: 102px;
-    height: 102px;
+    width: 80px;
+    height: 80px;
     background: #0756F0;
-    border-radius: 102px;
+    border-radius: 80px;
     font-size: 28px;
     font-weight: 500;
     color: #fff;
-    line-height: 102px;
+    line-height: 80px;
     text-align: center;
   }
 }
@@ -550,6 +551,12 @@ export default {
   font-family: PingFang SC;
   color: #0756F0;
   font-weight: 500;
+}
+.home-industry--item {
+  width: 33%;
+  img {
+    width: 240px;
+  }
 }
 .ant-carousel .slick-dots-bottom {
   bottom: 6vw !important;
