@@ -547,7 +547,7 @@ export default {
 }
 .home-industry--item-title {
   margin: -10px 0 56px;
-  font-size: 18px;
+  font-size: 24px;
   font-family: PingFang SC;
   color: #0756F0;
   font-weight: 500;
