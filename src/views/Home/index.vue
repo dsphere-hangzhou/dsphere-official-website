@@ -123,7 +123,7 @@
 
     <div class="cost">
 
-      <div class="home-titleps">
+      <!-- <div class="home-titleps">
         <div class="home-product__title">
           申请演示
         </div>
@@ -133,7 +133,7 @@
       <div class="homecost-video">
         <img src="homesqys.png" class="homecost-video-img"/>
         <img src="play2.png" class="homecost-video__play" @click="goPay"/>
-      </div>
+      </div> -->
 
       <div class="home-titleps">
         <div class="home-product__title">
