@@ -2,33 +2,38 @@
   <div class="commerce">
     <Header />
     <div class="commerce-top">
-      <div class="commerce-top--box">
-        <div class="commerce-top__left">
-          <img src="logo3.png" style="width: 194px"/>
+      <div class="commerce-topBox">
+
+        <div class="commerce-top--box">
+          <div class="commerce-top__left">
+            <img src="logo3.png" style="width: 194px"/>
+          </div>
+          <div class="commerce-top__right">
+            <img src="DSPHERE.png"/>
+            <p>数影星球（杭州）科技有限公司</p>
+          </div>
         </div>
-        <div class="commerce-top__right">
-          <img src="DSPHERE.png"/>
-          <p>数影星球（杭州）科技有限公司</p>
+        <div class="commerce-mil--box">
+          <img src="dsgzkj.png" style="width: 680px"/>
+          <div class="commerce-mil--box__span">
+            <div class="commerce-mil--box__span-gang"></div>
+            2021
+            <div class="commerce-mil--box__span-gang"></div>
+          </div>
+        </div>
+        <div class="commerce-ps--box">
+          <img src="commercegang.png" class="commerce-ps--box__gang" />
+          数影星球能让您随时随地，<span>高效、安全、智能</span>的管理您的店铺
         </div>
       </div>
-      <div class="commerce-mil--box">
-        <img src="dsgzkj.png" style="width: 60%"/>
-        <div class="commerce-mil--box__span">
-          <div class="commerce-mil--box__span-gang"></div>
-          2021
-          <div class="commerce-mil--box__span-gang"></div>
-        </div>
-      </div>
-      <div class="commerce-ps--box">
-        <img src="commercegang.png" class="commerce-ps--box__gang" />
-        数影星球能让您随时随地，<span>高效、安全、智能</span>的管理您的店铺
-      </div>
+    </div>
+    <div class="commerce-next">
       <div class="commerce-problem--box">
         您是否也有这些困扰
       </div>
       <div class="commerce-problem--list">
         <div class="commerce-problem--list-item1">
-          多店铺运营
+          店群运营
         </div>
         <div class="commerce-problem--list-item2">
           账号管理
@@ -113,7 +118,7 @@
             <p>The store security</p>
           </div>
           <img src="commerceright.png" style="width: 50px; height: 18px;margin-top: 13px"/>
-          <img src="commercedot.png" style="width: 18px; height: 18px;margin-top: 13px"/>
+          <img src="commercedot.png" style="width: 10px; height: 10px;margin-top: 13px"/>
           <div class="commerce-advantage__security-item__right">
             与电脑完全隔离的环境，纯净的IP地址，护航您的店铺安全
           </div>
@@ -125,7 +130,7 @@
             <p>Account security</p>
           </div>
           <img src="commerceright.png" style="width: 50px; height: 18px;margin-top: 13px"/>
-          <img src="commercedot.png" style="width: 18px; height: 18px;margin-top: 13px"/>
+          <img src="commercedot.png" style="width: 10px; height: 10px;margin-top: 13px"/>
           <div class="commerce-advantage__security-item__right">
             店铺账号自动登录，不用记忆，不用下发，不会登错
           </div>
@@ -137,7 +142,7 @@
             <p>VPS security</p>
           </div>
           <img src="commerceright.png" style="width: 50px; height: 18px;margin-top: 13px"/>
-          <img src="commercedot.png" style="width: 18px; height: 18px;margin-top: 13px"/>
+          <img src="commercedot.png" style="width: 10px; height: 10px;margin-top: 13px"/>
           <div class="commerce-advantage__security-item__right">
             存量店铺用的VPS可以安全无风险的托管到平台上使用
           </div>
@@ -181,8 +186,7 @@
           <div class="commerce-bottom__table-header1">对比项</div>
           <div class="commerce-bottom__table-header2">数影</div>
           <div class="commerce-bottom__table-header3">VPS</div>
-          <div class="commerce-bottom__table-header4">XX浏览器</div>
-          <div class="commerce-bottom__table-header5">电脑+专线</div>
+          <div class="commerce-bottom__table-header4">超级浏览器</div>
         </div>
         <div class="commerce-bottom__table-center">
           <div class="commerce-bottom__table-center__list" v-for="(item, index) in list" :key="item.contrast">
@@ -190,19 +194,14 @@
               {{item.contrast}}
             </div>
             <div class="commerce-bottom__table-center__list-item2 commerce-bottom__table-center__list-action">
-              {{item.my}}
+              <img src="true.png" style="width: 40px"/>
             </div>
-            <div class="commerce-bottom__table-center__list-item3" 
-              :class="{'commerce-bottom__table-center__list-action': index === 0 || index === 10 }">
-              {{item.vps}}
+            <div class="commerce-bottom__table-center__list-item3" >
+              <div class="commerce-bottom__table-center__list-item3--gang" v-if="index === 3"></div>
+              <img :src="item.vps+ '.png'" style="width: 40px" v-else/>
             </div>
-            <div class="commerce-bottom__table-center__list-item4"
-              :class="{'commerce-bottom__table-center__list-action': index === 1 || index === 2 || index === 4 }">
-              {{item.llq}}
-            </div>
-            <div class="commerce-bottom__table-center__list-item5"
-              :class="{'commerce-bottom__table-center__list-action': index === 0 || index === 10 }">
-              {{item.computer}}
+            <div class="commerce-bottom__table-center__list-item4">
+              <img :src="item.llq+ '.png'" style="width: 40px"/>
             </div>
           </div>
         </div>
@@ -243,71 +242,55 @@ export default {
   data () {
     return {
       list: [{
-        contrast: '完全独立的店铺环境',
-        my: '完全独立',
-        vps: '完全独立',
-        llq: '仅浏览器和IP独立', 
-        computer: '完全独立'
+        contrast: '完全的IP地址',
+        my: true,
+        vps: false,
+        llq: true, 
       }, {
-        contrast: '多套环境的融合管理',
-        my: '支持',
-        vps: '不支持',
-        llq: '支持', 
-        computer: '不支持'
+        contrast: '独立的店铺环境',
+        my: true,
+        vps: true,
+        llq: false, 
+      }, {
+        contrast: '店铺智能安全检测',
+        my: true,
+        vps: false,
+        llq: false, 
+      }, {
+        contrast: '安全托管现有店铺',
+        my: true,
+        vps: '-',
+        llq: false, 
+      }, {
+        contrast: '店群融合管理',
+        my: true,
+        vps: false,
+        llq: true, 
+      }, {
+        contrast: '在线文档协作',
+        my: true,
+        vps: false,
+        llq: false, 
       }, {
         contrast: '店铺账号自动登录',
-        my: '支持',
-        vps: '不支持',
-        llq: '支持', 
-        computer: '不支持'
+        my: true,
+        vps: false,
+        llq: true, 
       }, {
-        contrast: '安全托管存量VPS',
-        my: '零风险无缝托管',
-        vps: '不涉及',
-        llq: '有风险', 
-        computer: '不涉及'
+        contrast: '店铺账号防登错',
+        my: true,
+        vps: false,
+        llq: false, 
       }, {
-        contrast: '账号管理',
-        my: '账号不用下发',
-        vps: '账号要下发',
-        llq: '账号不用下发', 
-        computer: '账号要下发'
+        contrast: '与VPN同时使用',
+        my: true,
+        vps: true,
+        llq: false, 
       }, {
-        contrast: '必须持续购买',
-        my: '随时可以停止续费',
-        vps: '不涉及',
-        llq: '停止续费必须迁移店铺', 
-        computer: '不涉及'
-      }, {
-        contrast: '在线文档',
-        my: '在线使用原Excel处理',
-        vps: '不涉及',
-        llq: '无', 
-        computer: '无'
-      }, {
-        contrast: '文档模板',
-        my: '提供头部卖家运营模板',
-        vps: '无',
-        llq: '无', 
-        computer: '无'
-      }, {
-        contrast: '智能算力',
-        my: '智能云端算力引擎分析',
-        vps: '无',
-        llq: '无', 
-        computer: '无'
-      }, {
-        contrast: '远程办公',
-        my: '不带电脑也能随处运营',
-        vps: '无',
-        llq: '必须带着工作电脑', 
-        computer: '只有远程桌面'
-      }, {
-        contrast: '上手难度',
-        my: '与本地电脑体验一致',
-        vps: '易上手',
-        llq: '有学习成本', 
-        computer: '易上手'
+        contrast: '1对1店铺安全顾问',
+        my: true,
+        vps: false,
+        llq: false, 
       }]
     }
   }
@@ -316,25 +299,34 @@ export default {
 
 <style lang="less">
 .commerce {
-  background: url('/commercetop.png') no-repeat top right;
-  background-size: 100vw;
+  background: #fff;
 }
 .commerce-top {
+  background: #eef2fc;
+}
+.commerce-topBox {
   padding: 140px 0 66px;
+  width: 1200px;
+  margin: 0 auto;
+  background: url('/commercetop.png') no-repeat top center;
+  background-size: 1200px 100%;
 }
 .commerce-top--box {
   display: flex;
-  width: 1200px;
-  margin: 0 auto;
+}
+.commerce-top__left {
+  flex: 1;
 }
 .commerce-top__right {
   margin-left: 140px;
+  margin-right: 48px;
+  width: 429px;
   img {
-    width: 100%;
+    width: 429px;
   }
   p {
-    margin-top: 40px;
-    font-size: 56px;
+    margin-top: 24px;
+    font-size: 24px;
     text-align: right;
     line-height: 77px;
     letter-spacing: 3px;
@@ -349,7 +341,7 @@ export default {
     display: flex;
     align-items: center;
     bottom: 0;
-    left: 40%;
+    left: 526px;
     font-size: 120px;
     color: #011847;
     line-height: 120px;
@@ -369,10 +361,12 @@ export default {
   display: flex;
   width: 1200px;
   margin: 0 auto;
-  font-size: 40px;
+  font-size: 24px;
   font-weight: normal;
   color: #011847;
   span {
+    font-size: 28px;
+    font-weight: 500;
     color: #0756F0;
   }
 }
@@ -382,47 +376,50 @@ export default {
 }
 .commerce-problem--box {
   width: 1200px;
-  height: 171px;
+  height: 114px;
   margin: 131px auto 60px;
   padding-left: 84px;
   background: url('/commerceproblem.png') no-repeat top left;
-  background-size: 100% 100%;
-  font-size: 88px;
+  background-size: 800px;
+  font-size: 42px;
   font-weight: 600;
   color: #0E44AD;
-  line-height: 171px;
+  line-height: 114px;
   letter-spacing: 1px;
+}
+.commerce-next {
+  margin-bottom: 80px;
 }
 .commerce-problem--list {
   display: flex;
   justify-content: center;
   width: 1200px;
   margin: 0 auto 40px;
-  font-size: 48px;
+  font-size: 32px;
   font-weight: 500;
-  line-height: 65px;
+  line-height: 44px;
   color: #FFFFFF;
   .commerce-problem--list-item1 {
     margin: 0 85px;
-    padding: 37px 43px 0 30px;
-    width: 218px;
-    height: 218px;
+    padding: 50px 47px 0 61px;
+    width: 200px;
+    height: 200px;
     background: url('/commerceproblem1.png') no-repeat top left;
     background-size: 100% 100%;
   }
   .commerce-problem--list-item2 {
     margin: 0 85px;
-    padding: 37px 68px 0 54px;
-    width: 218px;
-    height: 218px;
+    padding: 50px 47px 0 61px;
+    width: 200px;
+    height: 200px;
     background: url('/commerceproblem2.png') no-repeat top left;
     background-size: 100% 100%;
   }
   .commerce-problem--list-item3 {
     margin: 0 85px;
-    width: 218px;
-    height: 218px;
-    padding: 37px 68px 0 54px;
+    padding: 50px 47px 0 61px;
+    width: 200px;
+    height: 200px;
     background: url('/commerceproblem3.png') no-repeat top left;
     background-size: 100% 100%;
   }
@@ -455,14 +452,15 @@ export default {
   width: 1200px;
   margin: 0 auto;
   .commerce-advantage__title {
-    font-size: 86px;
+    font-size: 42px;
     font-family: Alibaba-PuHuiTi-M, Alibaba-PuHuiTi;
     font-weight: normal;
     color: #124AB6;
-    line-height: 86px;
+    line-height: 42px;
+    font-weight: 500;
     letter-spacing: 1px;
     img {
-      width: 161px;
+      width: 83px;
     }
   }
   .commerce-advantage__01 {
@@ -471,10 +469,12 @@ export default {
     justify-content: space-between;
     .commerce-advantage__01-item {
       width: 368px;
-      font-size: 48px;
+      font-size: 32px;
+      line-height: 52px;
       color: #011847;
       img {
-        width: 90px;
+        vertical-align: text-bottom;
+        width: 52px;
       }
     }
   }
@@ -491,18 +491,18 @@ export default {
     }
     .commerce-advantage__011-item {
       margin: 6px;
-      padding: 10px;
+      padding: 42px 20px;
       width: 356px;
       height: 190px;
       background: #EBF2FE;
       border-radius: 14px;
       border: 6px solid transparent;
       border-radius: 14px;
-      font-size: 34px;
+      font-size: 24px;
       font-family: Alibaba-PuHuiTi-R, Alibaba-PuHuiTi;
       font-weight: normal;
       color: #011847;
-      line-height: 48px;
+      line-height: 32px;
       letter-spacing: 1px;
     }
   }
@@ -518,32 +518,32 @@ export default {
       justify-content: space-between;
       margin: 48px 0;
       img {
-        width: 87px;
-        height: 87px;
+        width: 52px;
+        height: 52px;
       }
       .commerce-advantage__security-item__left {
-        font-size: 48px;
+        font-size: 32px;
         font-family: Alibaba-PuHuiTi-R, Alibaba-PuHuiTi;
         font-weight: normal;
         color: #011847;
-        line-height: 48px;
+        line-height: 32px;
         letter-spacing: 1px;
         p {
           margin-top: 10px;
-          font-size: 22px;
+          font-size: 18px;
           font-weight: normal;
           color: #011847;
-          line-height: 22px;
+          line-height: 18px;
           letter-spacing: 1px;
         }
       }
       .commerce-advantage__security-item__right {
         margin-right: 30px;
         width: 493px;
-        font-size: 30px;
+        font-size: 24px;
         font-weight: normal;
         color: #FFFFFF;
-        line-height: 48px;
+        line-height: 32px;
         letter-spacing: 1px;
       }
     }
@@ -553,24 +553,24 @@ export default {
     display: flex;
     justify-content: space-between;
     .commerce-advantage__02-item {
-      width: 341px;
-      height: 405px;
+      width: 320px;
+      height: 300px;
       background: url('/commerceintelligence.png') no-repeat top left;
       background-size: 100% 100%;
-      padding: 48px 40px;
-      font-size: 34px;
+      padding: 55px 20px;
+      font-size: 24px;
       color: #011847;
-      line-height: 48px;
+      line-height: 40px;
       letter-spacing: 1px;
       .commerce-advantage__02-item--title {
         margin-bottom: 30px;
-        font-size: 48px;
+        font-size: 34px;
         font-weight: normal;
         color: #011847;
-        line-height: 48px;
+        line-height: 32px;
         letter-spacing: 1px;
         img {
-          width: 44px;
+          width: 35px;
         }
       }
     }
@@ -599,20 +599,19 @@ export default {
         display: inline-block;
       }
       .commerce-bottom__table-header1 {
-        width: 240px;
+        width: 360px;
         border-right: 1px solid #FFFFFF;
       }
       .commerce-bottom__table-header2 {
-        width: 249px;
+        width: 270px;
         border-right: 1px solid #FFFFFF;
       }
       .commerce-bottom__table-header3 {
-        width: 226px;
+        width: 270px;
         border-right: 1px solid #FFFFFF;
       }
       .commerce-bottom__table-header4 {
-        width: 248px;
-        border-right: 1px solid #FFFFFF;
+        width: 280px;
       }
       .commerce-bottom__table-header5 {
         width: 233px;
@@ -633,20 +632,25 @@ export default {
           display: inline-block;
         }
         .commerce-bottom__table-center__list-item1 {
-          width: 240px;
+          width: 360px;
           border-right: 1px solid #0756F0;
         }
         .commerce-bottom__table-center__list-item2 {
-          width: 249px;
+          width: 270px;
           border-right: 1px solid #0756F0;
         }
         .commerce-bottom__table-center__list-item3 {
-          width: 226px;
+          width: 270px;
           border-right: 1px solid #0756F0;
         }
+        .commerce-bottom__table-center__list-item3--gang {
+          width: 34px;
+          height: 1px;
+          border: 2px solid rgba(1, 24, 71, 0.7);
+          border-radius: 5px;
+        }
         .commerce-bottom__table-center__list-item4 {
-          width: 248px;
-          border-right: 1px solid #0756F0;
+          width: 280px;
         }
         .commerce-bottom__table-center__list-item5 {
           width: 233px;
@@ -664,19 +668,19 @@ export default {
     display: flex;
     justify-content: space-between;
     .commerce-bottom__aboutme-text {
-      padding: 360px 48px 48px;
+      padding: 80px 48px 180px;
       width: 700px;
       background: #fff;
-      font-size: 28px;
+      font-size: 24px;
       color: #011847;
-      line-height: 38px;
+      line-height: 33px;
       letter-spacing: 3px;
       .commerce-bottom__aboutme-text__title {
         margin-bottom: 20px;
-        font-size: 48px;
+        font-size: 32px;
         font-weight: 500;
         color: #124AB6;
-        line-height: 48px;
+        line-height: 32px;
         letter-spacing: 1px;
         img {
           width: 12px;
@@ -686,16 +690,16 @@ export default {
       .commerce-bottom__aboutme-text__center {
         margin: 6px 0;
         img {
-          width: 26px;
+          width: 21px;
           vertical-align: inherit;
         }
       }
     }
     .commerce-bottom__aboutme-img {
-      margin-top: 360px;
-      width: 237px;
+      margin-top: 80px;
+      width: 194px;
       img {
-        width: 237px;
+        width: 194px;
       }
     }
   }
