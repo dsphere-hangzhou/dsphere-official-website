@@ -555,7 +555,7 @@ export default {
 .home-industry--item {
   width: 33%;
   img {
-    width: 240px;
+    width: 249px;
   }
 }
 .ant-carousel .slick-dots-bottom {
