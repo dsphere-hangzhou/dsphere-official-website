@@ -215,7 +215,7 @@
 
       </div>
 
-      <div class="security-titleps">
+      <!-- <div class="security-titleps">
         <div class="security-titleps__top">
           申请演示
         </div>
@@ -237,7 +237,7 @@
           <img class="security-industry--item-img" :src="item.icon" />
           <div class="security-industry--item-title">{{item.name}}</div>
         </div>
-      </div>
+      </div> -->
 
     </div>
 
