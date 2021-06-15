@@ -128,6 +128,7 @@ export default {
 .footer-item2 {
   display: inline-block;
   text-align: center;
+  line-height: 34px;
   color: #8990a0;
 }
 .footer-item--title {
