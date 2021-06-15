@@ -359,6 +359,7 @@ export default {
 }
 .commerce-ps--box {
   display: flex;
+  align-items: center;
   width: 1200px;
   margin: 0 auto;
   font-size: 24px;
@@ -433,7 +434,7 @@ export default {
   background-size: 100% 100%;
   .commerce-problem--text-item {
     margin: 10px 0;
-    font-size: 28px;
+    font-size: 24px;
     font-weight: normal;
     color: #011847;
     line-height: 39px;
