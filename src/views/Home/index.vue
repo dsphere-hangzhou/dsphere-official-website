@@ -275,14 +275,14 @@ export default {
 }
 .home-banner__box-title {
   margin-top: 8vw;
-  font-size: 98px;
+  font-size: 60px;
   font-weight: bold;
   line-height: 130px;
 }
 .home-banner__box-p {
   margin: 8px 0 47px;
   display: flex;
-  font-size: 29px;
+  font-size: 24px;
   line-height: 40px;
 }
 .home-banner__box-p__span {
@@ -296,7 +296,7 @@ export default {
   background: #fff;
   border-radius: 16px;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 26px;
   text-align: center;
   line-height: 60px;
   color: #0756F0;
@@ -348,7 +348,7 @@ export default {
 }
 .home-details {
   position: relative;
-  margin: -80px 4%;
+  margin: -80px 8%;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -404,6 +404,7 @@ export default {
   .home-details__center {
     display: flex;
     height: 102px;
+    font-size: 24px;
   }
   .home-details__center-dot {
     margin: 0 16px;
@@ -411,7 +412,7 @@ export default {
     height: 102px;
     background: #0756F0;
     border-radius: 102px;
-    font-size: 30px;
+    font-size: 28px;
     font-weight: 500;
     color: #fff;
     line-height: 102px;
@@ -420,7 +421,7 @@ export default {
 }
 .home-product__title-gang {
   margin: 24px auto 81px;
-  width: 200px;
+  width: 140px;
   height: 12px;
   background: linear-gradient(270deg, rgba(17, 143, 249, 0.5) 0%, #0756F0 100%);
   border-radius: 5px;
@@ -429,7 +430,7 @@ export default {
 .home-product__title {
     padding-top: 28px;
     text-align: center;
-    font-size: 60px;
+    font-size: 42px;
   }
 
 .home-product {
@@ -443,31 +444,31 @@ export default {
     justify-content: space-between;
   }
   .home-product__center-item {
-    height: 520px;
-    width: 372px;
+    height: 492px;
+    width: 320px;
     background: url('/productbackground.png') no-repeat top left;
     background-size: 100% 100%;
     cursor: pointer;
     .home-product__center-item__img {
-      margin: 40px 25px 40px 65px;
-      width: 280px;
+      margin: 29px 32px 40px 48px;
+      width: 240px;
     }
     .home-product__center-item__title {
-      margin-left: 69px;
+      margin-left: 40px;
       font-family: Alibaba-PuHuiTi-M, Alibaba-PuHuiTi;
       font-weight: normal;
-      font-size: 36px;
+      font-size: 26px;
       color: #fff;
     }
     .home-product__center-item__ps {
-      margin-left: 69px;
-      width: 256px;
+      margin-left: 40px;
+      width: 240px;
       font-family: Alibaba-PuHuiTi-M, Alibaba-PuHuiTi;
       font-size: 18px;
       color: #fff;
     }
     .home-product__center-item__go {
-      margin: 25px 25px 0 69px;
+      margin: 40px 25px 0 40px;
       background: #fff;
       padding: 11px 8px;
       width: 40px;
