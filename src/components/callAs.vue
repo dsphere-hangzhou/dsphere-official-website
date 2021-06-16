@@ -128,7 +128,7 @@ export default {
   .callAs-pop {
     display: none;
     position: absolute;
-    right: 110px;
+    right: 100px;
     top: 100px;
     padding: 20px;
     width: 161px;

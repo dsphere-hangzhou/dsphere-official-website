@@ -418,7 +418,7 @@ export default {
   font-weight: 500;
   line-height: 44px;
   color: #FFFFFF;
-  letter-spacing: 4px;
+  letter-spacing: 6px;
   .commerce-problem--list-item1 {
     margin: 0 85px;
     padding: 50px 47px 0 61px;
