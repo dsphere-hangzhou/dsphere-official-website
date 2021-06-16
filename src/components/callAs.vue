@@ -48,9 +48,9 @@ export default {
     position: fixed;
     top: 50%;
     right: 0;
-    width: 68px;
+    width: 78px;
     height: 288px;
-    padding: 12px 8px;
+    padding: 12px 18px 12px 8px;
     border: 2px solid #a6bcf5;
     box-shadow: 0px 8px 14px 0px rgba(7, 86, 240, 0.08);
     border-radius: 15px 0 0 15px;

@@ -229,11 +229,12 @@ export default {
 
 <style lang="less">
 .home {
-  background: #F7F8FA;
+  background: #fff;
 }
 .home-banner {
   position: relative;
   width: 100%;
+  height: 600px;
   color: #fff;
 }
 .home-banner__background {
@@ -246,18 +247,21 @@ export default {
 .home-banner__backbox {
   position: relative;
   padding: 0 0 10vw;
+  height: 600px;
   background: url('/homebanner.png') no-repeat top left;
   background-size: 100% 100%;
 }
 .home-banner__backbox1 {
   position: relative;
   padding: 0 0 10vw;
+  height: 600px;
   background: url('/homebanner2.png') no-repeat top left;
   background-size: 100% 100%;
 }
 .home-banner__backbox2 {
   position: relative;
   padding: 0 0 10vw;
+  height: 600px;
   background: url('/homebanner3.png') no-repeat top left;
   background-size: 100% 100%;
 }
@@ -291,14 +295,14 @@ export default {
   transform: scale(0.5);
 }
 .home-banner__box--buttton {
-  width: 180px;
-  height: 60px;
+  width: 138px;
+  height: 48px;
   background: #fff;
   border-radius: 16px;
   font-weight: 500;
   font-size: 26px;
   text-align: center;
-  line-height: 60px;
+  line-height: 48px;
   color: #0756F0;
   cursor: pointer;
 }
@@ -348,7 +352,7 @@ export default {
 }
 .home-details {
   position: relative;
-  margin: -80px auto;
+  margin: -70px auto;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -435,8 +439,7 @@ export default {
   }
 
 .home-product {
-  margin-top: 130px;
-  padding-bottom: 60px;
+  margin-top: 100px;
   background: #fff;
   .home-product__center {
     margin: 0 auto;
@@ -488,7 +491,7 @@ export default {
 }
 
 .cost {
-  padding: 100px 0;
+  padding: 60px 0;
 }
 .cost-box {
   margin: 0 auto 100px;
@@ -546,16 +549,16 @@ export default {
   }
 }
 .home-industry--item-title {
-  margin: -10px 0 56px;
+  margin: 16px 0 74px;
   font-size: 24px;
   font-family: PingFang SC;
   color: #0756F0;
-  font-weight: 500;
 }
 .home-industry--item {
   width: 33%;
   img {
-    width: 249px;
+    width: 187px;
+    height: 187px;
   }
 }
 .ant-carousel .slick-dots-bottom {
@@ -620,7 +623,7 @@ export default {
   background-size: 100%;
   text-align: center;
   color: #fff;
-  font-size: 60px;
+  font-size: 42px;
   font-family: PingFangSC-Semibold, PingFang SC;
   font-weight: 600;
   button {
@@ -628,12 +631,12 @@ export default {
     top: 63px;
     right: 50%;
     transform: translate(500px, 0);
-    width: 198px;
-    height: 66px;
+    width: 130px;
+    height: 44px;
     background: #FFFFFF;
     border-radius: 14px;
     color: #0756F0;
-    font-size: 30px;
+    font-size: 24px;
   }
 }
 </style>

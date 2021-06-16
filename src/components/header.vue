@@ -92,7 +92,7 @@ export default {
   position: -webkit-sticky; /* Safari */
   position: sticky;
   top: 0;
-  height: 70px;
+  height: 60px;
   width: 100%;
   background: #fff;
   z-index: 10;
@@ -104,7 +104,7 @@ export default {
 .home-title__box {
   margin: 0 auto;
   width: 1200px;
-  height: 70px;
+  height: 60px;
   display: flex;
   align-items: center;
 }
@@ -113,11 +113,11 @@ export default {
   font-size: 20px;
   font-weight: 500;
   img {
-    width: 181px;
+    width: 178px;
   }
 }
 .home-title__box-menu {
-  height: 70px;
+  height: 60px;
   display: flex;
   align-items: center;
   font-size: 16px;
@@ -142,8 +142,8 @@ export default {
   }
 }
 .home-title__box-action {
-  height: 70px;
-  line-height: 70px;
+  height: 60px;
+  line-height: 60px;
   cursor: pointer;
 }
 .home-title__box-action:hover {
