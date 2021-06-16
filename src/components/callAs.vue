@@ -25,7 +25,7 @@
         ds@dsphere.cn
       </div>
       <div class="callAs-pop--item">
-        <img src="email1.png"/>
+        <img src="wcat.png"/>
         微信咨询
       </div>
       <img src="er.png" class="callAs-pop--er"/>
