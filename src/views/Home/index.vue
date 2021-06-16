@@ -299,7 +299,7 @@ export default {
   width: 138px;
   height: 48px;
   background: #fff;
-  border-radius: 16px;
+  border-radius: 8px;
   font-weight: 500;
   font-size: 26px;
   text-align: center;

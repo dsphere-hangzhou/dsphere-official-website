@@ -121,7 +121,7 @@
             <p>The store security</p>
           </div>
           <img src="commerceright.png" style="width: 50px; height: 18px;margin-top: 13px"/>
-          <img src="commercedot.png" style="width: 10px; height: 10px;margin-top: 13px"/>
+          <img src="commercedot.png" style="width: 10px; height: 10px;margin: 13px 16px 0 81px;"/>
           <div class="commerce-advantage__security-item__right">
             与电脑完全隔离的环境，纯净的IP地址，护航您的店铺安全
           </div>
@@ -133,7 +133,7 @@
             <p>Account security</p>
           </div>
           <img src="commerceright.png" style="width: 50px; height: 18px;margin-top: 13px"/>
-          <img src="commercedot.png" style="width: 10px; height: 10px;margin-top: 13px"/>
+          <img src="commercedot.png" style="width: 10px; height: 10px;margin: 13px 16px 0 81px;"/>
           <div class="commerce-advantage__security-item__right">
             店铺账号自动登录，不用记忆，不用下发，不会登错
           </div>
@@ -145,7 +145,7 @@
             <p>VPS security</p>
           </div>
           <img src="commerceright.png" style="width: 50px; height: 18px;margin-top: 13px"/>
-          <img src="commercedot.png" style="width: 10px; height: 10px;margin-top: 13px"/>
+          <img src="commercedot.png" style="width: 10px; height: 10px;margin: 13px 16px 0 81px;"/>
           <div class="commerce-advantage__security-item__right">
             存量店铺用的VPS可以安全无风险的托管到平台上使用
           </div>
@@ -201,10 +201,10 @@
             </div>
             <div class="commerce-bottom__table-center__list-item3" >
               <div class="commerce-bottom__table-center__list-item3--gang" v-if="index === 3"></div>
-              <img :src="item.vps+ '.png'" style="width: 32px" v-else/>
+              <img :src="item.vps+ '.png'" :style="item.vps ? 'width: 32px' : 'width: 22px'" v-else/>
             </div>
             <div class="commerce-bottom__table-center__list-item4">
-              <img :src="item.llq+ '.png'" style="width: 32px"/>
+              <img :src="item.llq+ '.png'" :style="item.llq ? 'width: 32px' : 'width: 22px'"/>
             </div>
           </div>
         </div>
@@ -418,6 +418,7 @@ export default {
   font-weight: 500;
   line-height: 44px;
   color: #FFFFFF;
+  letter-spacing: 4px;
   .commerce-problem--list-item1 {
     margin: 0 85px;
     padding: 50px 47px 0 61px;
@@ -529,7 +530,7 @@ export default {
   .commerce-advantage__security {
     margin: 61px 0 120px;
     width: 1200px;
-    height: 495px;
+    height: 450px;
     padding: 10px 28px 10px 43px;
     background: url('/commercesecurity.png') no-repeat top left;
     background-size: 100% 100%;
@@ -537,11 +538,13 @@ export default {
       display: flex;
       justify-content: space-between;
       margin: 48px 0;
+      padding-left: 72px;
       img {
         width: 52px;
         height: 52px;
       }
       .commerce-advantage__security-item__left {
+        width: 230px;
         font-size: 32px;
         font-family: Alibaba-PuHuiTi-R, Alibaba-PuHuiTi;
         font-weight: normal;
@@ -601,7 +604,7 @@ export default {
   background-size: 100% ;
   .commerce-bottom__table {
     width: 1200px;
-    margin: 131px auto 60px;
+    margin: 0 auto;
     background: #fff;
     .commerce-bottom__table-header {
       width: 1200px;
@@ -645,7 +648,7 @@ export default {
       font-family: Alibaba-PuHuiTi-R, Alibaba-PuHuiTi;
       font-weight: normal;
       color: #011847;
-      line-height: 56px;
+      line-height: 58px;
       .commerce-bottom__table-center__list {
         border-bottom: 1px solid #0756F0;
         div {
@@ -683,12 +686,12 @@ export default {
   }
   .commerce-bottom__aboutme {
     width: 1200px;
-    margin: 0 auto 0;
+    margin: 0 auto;
     padding-bottom: 124px;
     display: flex;
     justify-content: space-between;
     .commerce-bottom__aboutme-text {
-      padding: 16px 39px 58px;
+      padding: 76px 39px 58px;
       width: 700px;
       background: #fff;
       font-size: 24px;
@@ -716,6 +719,7 @@ export default {
       }
     }
     .commerce-bottom__aboutme-img {
+      margin-top: 60px;
       width: 194px;
       img {
         width: 194px;
