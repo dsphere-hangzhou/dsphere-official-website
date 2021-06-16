@@ -235,6 +235,7 @@ export default {
   position: relative;
   width: 100%;
   height: 600px;
+  overflow: hidden;
   color: #fff;
 }
 .home-banner__background {

@@ -6,7 +6,7 @@
 
         <div class="commerce-top--box">
           <div class="commerce-top__left">
-            <img src="logo3.png" style="width: 194px"/>
+            <!-- <img src="logo3.png" style="width: 194px"/> -->
           </div>
           <div class="commerce-top__right">
             <img src="DSPHERE.png"/>
@@ -14,7 +14,7 @@
           </div>
         </div>
         <div class="commerce-mil--box">
-          <img src="dsgzkj.png" style="width: 680px"/>
+          <img src="dsgzkj.png" style="width: 710px"/>
           <div class="commerce-mil--box__span">
             <div class="commerce-mil--box__span-gang"></div>
             2021
@@ -24,6 +24,9 @@
         <div class="commerce-ps--box">
           <img src="commercegang.png" class="commerce-ps--box__gang" />
           数影星球能让您随时随地，<span>高效、安全、智能</span>的管理您的店铺
+        </div>
+        <div class="commerce-ps--button">
+          <a-button>立即体验</a-button>
         </div>
       </div>
     </div>
@@ -194,14 +197,14 @@
               {{item.contrast}}
             </div>
             <div class="commerce-bottom__table-center__list-item2 commerce-bottom__table-center__list-action">
-              <img src="true.png" style="width: 40px"/>
+              <img src="true.png" style="width: 32px"/>
             </div>
             <div class="commerce-bottom__table-center__list-item3" >
               <div class="commerce-bottom__table-center__list-item3--gang" v-if="index === 3"></div>
-              <img :src="item.vps+ '.png'" style="width: 40px" v-else/>
+              <img :src="item.vps+ '.png'" style="width: 32px" v-else/>
             </div>
             <div class="commerce-bottom__table-center__list-item4">
-              <img :src="item.llq+ '.png'" style="width: 40px"/>
+              <img :src="item.llq+ '.png'" style="width: 32px"/>
             </div>
           </div>
         </div>
@@ -302,14 +305,15 @@ export default {
   background: #fff;
 }
 .commerce-top {
-  background: #eef2fc;
+  background: #ecf2fc url('/commercetop.png') no-repeat top right;
+  background-size: 600px 500px;
+  height: 600px;
 }
 .commerce-topBox {
-  padding: 140px 0 66px;
+  padding: 38px 0 0;
   width: 1200px;
+  height: 600px;
   margin: 0 auto;
-  background: url('/commercetop.png') no-repeat top right;
-  background-size: 900px 750px;
 }
 .commerce-top--box {
   display: flex;
@@ -321,14 +325,14 @@ export default {
   margin-left: 140px;
   margin-right: 48px;
   width: 429px;
+  text-align: right;
   img {
-    width: 429px;
+    width: 202px;
   }
   p {
-    margin-top: 24px;
-    font-size: 24px;
-    text-align: right;
-    line-height: 77px;
+    margin-top: 14px;
+    font-size: 14px;
+    line-height: 20px;
     letter-spacing: 3px;
   }
 }
@@ -340,20 +344,20 @@ export default {
     position: absolute;
     display: flex;
     align-items: center;
-    bottom: 0;
-    left: 526px;
-    font-size: 120px;
+    bottom: 12px;
+    left: 730px;
+    font-size: 42px;
     color: #011847;
-    line-height: 120px;
+    line-height: 42px;
     font-family: Alibaba-PuHuiTi-R, Alibaba-PuHuiTi;
     letter-spacing: 1px;
   }
   .commerce-mil--box__span-gang {
-    margin: 0 47px; 
-    width: 8px;
-    height: 61px;
+    margin: 0 15px; 
+    width: 4px;
+    height: 22px;
     background: #011847;
-    border-radius: 1px;
+    border-radius: 3px;
     opacity: 0.8;
   }
 }
@@ -366,6 +370,7 @@ export default {
   font-weight: normal;
   color: #011847;
   span {
+    padding: 0 12px;
     font-size: 28px;
     font-weight: 500;
     color: #0756F0;
@@ -373,15 +378,28 @@ export default {
 }
 .commerce-ps--box__gang {
   margin-right: 14px;
-  width: 10px;
+  width: 6px;
+}
+.commerce-ps--button {
+  margin-top: 48px;
+  button {
+    width: 138px;
+    height: 48px;
+    background: #0756F0;
+    border-radius: 8px;
+    font-size: 26px;
+    font-weight: 500;
+    color: #FFFFFF;
+    line-height: 48px;
+  }
 }
 .commerce-problem--box {
   width: 1200px;
   height: 114px;
-  margin: 131px auto 60px;
+  margin: 60px auto 32px;
   padding-left: 84px;
   background: url('/commerceproblem.png') no-repeat top left;
-  background-size: 800px;
+  background-size: 1200px;
   font-size: 42px;
   font-weight: 600;
   color: #0E44AD;
@@ -469,6 +487,7 @@ export default {
     display: flex;
     justify-content: space-between;
     .commerce-advantage__01-item {
+      padding-left: 10px;
       width: 368px;
       font-size: 32px;
       line-height: 52px;
@@ -586,15 +605,15 @@ export default {
     background: #fff;
     .commerce-bottom__table-header {
       width: 1200px;
-      height: 85px;
+      height: 73px;
       background: linear-gradient(270deg, #118FF9 0%, #0756F0 100%);
       border-radius: 14px 14px 0px 0px;
       opacity: 0.8;
-      font-size: 41px;
+      font-size: 28px;
       font-family: Alibaba-PuHuiTi-M, Alibaba-PuHuiTi;
       font-weight: normal;
       color: #FFFFFF;
-      line-height: 85px;
+      line-height: 73px;
       text-align: center;
       div {
         display: inline-block;
@@ -622,11 +641,11 @@ export default {
       background: #EBF2FE;
       border: 1px solid #0756F0;
       text-align: center;
-      font-size: 24px;
+      font-size: 20px;
       font-family: Alibaba-PuHuiTi-R, Alibaba-PuHuiTi;
       font-weight: normal;
       color: #011847;
-      line-height: 68px;
+      line-height: 56px;
       .commerce-bottom__table-center__list {
         border-bottom: 1px solid #0756F0;
         div {
@@ -665,11 +684,11 @@ export default {
   .commerce-bottom__aboutme {
     width: 1200px;
     margin: 0 auto 0;
-    padding-bottom: 392px;
+    padding-bottom: 124px;
     display: flex;
     justify-content: space-between;
     .commerce-bottom__aboutme-text {
-      padding: 80px 48px 180px;
+      padding: 16px 39px 58px;
       width: 700px;
       background: #fff;
       font-size: 24px;
@@ -697,7 +716,6 @@ export default {
       }
     }
     .commerce-bottom__aboutme-img {
-      margin-top: 80px;
       width: 194px;
       img {
         width: 194px;
