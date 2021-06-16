@@ -26,7 +26,7 @@
           数影星球能让您随时随地，<span>高效、安全、智能</span>的管理您的店铺
         </div>
         <div class="commerce-ps--button">
-          <a-button>立即体验</a-button>
+          <a-button @click="$router.push('/contact_us')">立即体验</a-button>
         </div>
       </div>
     </div>
@@ -338,7 +338,7 @@ export default {
 }
 .commerce-mil--box {
   width: 1200px;
-  margin: 10vw auto 49px;
+  margin: 100px auto 49px;
   position: relative;
   .commerce-mil--box__span {
     position: absolute;
@@ -488,7 +488,7 @@ export default {
     display: flex;
     justify-content: space-between;
     .commerce-advantage__01-item {
-      padding-left: 10px;
+      padding-left: 20px;
       width: 368px;
       font-size: 32px;
       line-height: 52px;
@@ -587,6 +587,7 @@ export default {
       letter-spacing: 1px;
       .commerce-advantage__02-item--title {
         margin-bottom: 30px;
+        margin-left: 10px;
         font-size: 34px;
         font-weight: normal;
         color: #011847;

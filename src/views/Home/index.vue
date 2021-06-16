@@ -247,21 +247,21 @@ export default {
 }
 .home-banner__backbox {
   position: relative;
-  padding: 0 0 10vw;
+  padding: 0 0 60px;
   height: 600px;
   background: url('/homebanner.png') no-repeat top left;
   background-size: 100% 100%;
 }
 .home-banner__backbox1 {
   position: relative;
-  padding: 0 0 10vw;
+  padding: 0 0 60px;
   height: 600px;
   background: url('/homebanner2.png') no-repeat top left;
   background-size: 100% 100%;
 }
 .home-banner__backbox2 {
   position: relative;
-  padding: 0 0 10vw;
+  padding: 0 0 60px;
   height: 600px;
   background: url('/homebanner3.png') no-repeat top left;
   background-size: 100% 100%;
@@ -279,7 +279,7 @@ export default {
   }
 }
 .home-banner__box-title {
-  margin-top: 8vw;
+  margin-top: 148px;
   font-size: 60px;
   font-weight: bold;
   line-height: 130px;
@@ -563,7 +563,7 @@ export default {
   }
 }
 .ant-carousel .slick-dots-bottom {
-  bottom: 6vw !important;
+  bottom: 110px !important;
 }
 .ant-carousel .security-box-dot li button {
   background: #666 !important;
@@ -635,7 +635,7 @@ export default {
     width: 130px;
     height: 44px;
     background: #FFFFFF;
-    border-radius: 14px;
+    border-radius: 8px;
     color: #0756F0;
     font-size: 24px;
   }
