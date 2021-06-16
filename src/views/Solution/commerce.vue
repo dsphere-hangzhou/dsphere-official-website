@@ -308,8 +308,8 @@ export default {
   padding: 140px 0 66px;
   width: 1200px;
   margin: 0 auto;
-  background: url('/commercetop.png') no-repeat top center;
-  background-size: 1200px 100%;
+  background: url('/commercetop.png') no-repeat top right;
+  background-size: 900px 750px;
 }
 .commerce-top--box {
   display: flex;
