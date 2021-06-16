@@ -47,7 +47,7 @@ export default {
   .callAs{
     position: fixed;
     top: 50%;
-    right: 20px;
+    right: 0;
     width: 68px;
     height: 288px;
     padding: 12px 8px;
