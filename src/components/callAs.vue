@@ -46,7 +46,7 @@ export default {
 <style lang="less">
   .callAs{
     position: fixed;
-    top: 50%;
+    bottom: 200px;
     right: 0;
     width: 78px;
     height: 288px;
@@ -55,6 +55,7 @@ export default {
     box-shadow: 0px 8px 14px 0px rgba(7, 86, 240, 0.08);
     border-radius: 15px 0 0 15px;
     background: #fff;
+    z-index: 1;
   }
   .callAs-logo {
     padding: 16px 0 18px;
