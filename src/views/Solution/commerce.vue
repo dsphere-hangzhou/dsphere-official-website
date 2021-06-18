@@ -120,7 +120,7 @@
             店铺安全
             <p>The store security</p>
           </div>
-          <img src="commerceright.png" style="width: 50px; height: 18px;margin-top: 13px"/>
+          <img src="commerceright.png" style="width: 50px; height: 18px;margin-top: 13px;padding-right: 10px"/>
           <img src="commercedot.png" style="width: 10px; height: 10px;margin: 13px 16px 0 81px;"/>
           <div class="commerce-advantage__security-item__right">
             与电脑完全隔离的环境，纯净的IP地址，护航您的店铺安全
@@ -132,7 +132,7 @@
             账号安全
             <p>Account security</p>
           </div>
-          <img src="commerceright.png" style="width: 50px; height: 18px;margin-top: 13px"/>
+          <img src="commerceright.png" style="width: 50px; height: 18px;margin-top: 13px;padding-right: 10px"/>
           <img src="commercedot.png" style="width: 10px; height: 10px;margin: 13px 16px 0 81px;"/>
           <div class="commerce-advantage__security-item__right">
             店铺账号自动登录，不用记忆，不用下发，不会登错
@@ -144,7 +144,7 @@
             VPS安全
             <p>VPS security</p>
           </div>
-          <img src="commerceright.png" style="width: 50px; height: 18px;margin-top: 13px"/>
+          <img src="commerceright.png" style="width: 50px; height: 18px;margin-top: 13px;padding-right: 10px"/>
           <img src="commercedot.png" style="width: 10px; height: 10px;margin: 13px 16px 0 81px;"/>
           <div class="commerce-advantage__security-item__right">
             存量店铺用的VPS可以安全无风险的托管到平台上使用
